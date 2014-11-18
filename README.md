@@ -8,6 +8,7 @@ small software distribution management like Matrix42.
 
 Dependencys:
 - Java Runtime Environment JRE 8
+- uses Hazelcast Data Grid from Hazelcast Inc.
 
 Components:
 - Client
