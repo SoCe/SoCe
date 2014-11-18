@@ -1,7 +1,7 @@
 SoCe
 ====
 
-small software distribution management like Matrix42.
+A free and Open Source small software distribution management like Matrix42.
 - free
 - easy to use
 - flexible
