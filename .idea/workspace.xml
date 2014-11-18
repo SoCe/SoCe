@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ef56a392-8411-4f59-aaf5-6fa7624a33c2" name="Default" comment="add directory">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/architectur/library.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/architectur/library.graphml" />
+    <list default="true" id="ef56a392-8411-4f59-aaf5-6fa7624a33c2" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="SoCe.iws" />
@@ -612,7 +610,11 @@
       <created>1416337113815</created>
       <updated>1416337113815</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added docs.">
+      <created>1416337958011</created>
+      <updated>1416337958011</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -661,7 +663,8 @@
     </option>
     <MESSAGE value="initial commit." />
     <MESSAGE value="change .gitignore." />
-    <option name="LAST_COMMIT_MESSAGE" value="change .gitignore." />
+    <MESSAGE value="added docs." />
+    <option name="LAST_COMMIT_MESSAGE" value="added docs." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
