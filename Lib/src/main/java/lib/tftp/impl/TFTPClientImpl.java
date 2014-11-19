@@ -22,6 +22,7 @@ public class TFTPClientImpl implements SoCeTFTPClient {
     protected TFTPClient tftpClient = null;
     protected int transferMode = TFTP.BINARY_MODE;
     protected TFTPConnectionLostListener tftpConnectionLostListener = null;
+    protected String host = "";
 
     @Override
     public void setTransferMode(int transferMode) {
@@ -31,6 +32,7 @@ public class TFTPClientImpl implements SoCeTFTPClient {
     @Override
     public void connect(String host, int port) throws UnknownHostException {
         this.tftpClient = new TFTPClient();
+        this.host = host;
 
         LoggerInstance.getLogger().debug("Connecting to tftp server " + host + ":" + port + "...");
 
@@ -55,7 +57,7 @@ public class TFTPClientImpl implements SoCeTFTPClient {
     }
 
     @Override
-    public void downloadFile(String localFile, String remoteFile, boolean overwriteFileIfExists) throws TFTPFileAlreadyExistsException {
+    public void downloadFile(String localFile, String remoteFile, boolean overwriteFileIfExists) throws TFTPFileAlreadyExistsException, IOException {
         if (this.tftpClient != null && this.tftpClient.isOpen()) {
             FileOutputStream output = null;
             File file = null;
@@ -76,6 +78,12 @@ public class TFTPClientImpl implements SoCeTFTPClient {
                 output = new FileOutputStream(file);
             } catch (IOException e) {
                 LoggerInstance.getLogger().error("TFTPClientImpl: could not open local file " + file.getAbsolutePath() + " for writing.");
+            }
+
+            try {
+                this.tftpClient.receiveFile(remoteFile, this.transferMode, output, this.host);
+            } finally {
+                output.close();
             }
         } else {
             if (this.tftpConnectionLostListener != null) {

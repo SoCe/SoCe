@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef56a392-8411-4f59-aaf5-6fa7624a33c2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lib/src/main/java/lib/tftp/exception/TFTPFileNotWritableException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lib/src/main/java/lib/download/DownloadManagerQueue.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/src/main/java/lib/tftp/SoCeTFTPClient.java" afterPath="$PROJECT_DIR$/Lib/src/main/java/lib/tftp/SoCeTFTPClient.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/src/main/java/lib/tftp/impl/TFTPClientImpl.java" afterPath="$PROJECT_DIR$/Lib/src/main/java/lib/tftp/impl/TFTPClientImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/src/main/java/lib/tftp/exception/TFTPFileAlreadyExistsException.java" afterPath="$PROJECT_DIR$/Lib/src/main/java/lib/tftp/exception/TFTPFileAlreadyExistsException.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="SoCe.iws" />
@@ -49,16 +48,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TFTPClientImpl.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Lib/src/main/java/lib/tftp/impl/TFTPClientImpl.java">
+      <file leaf-file-name="DownloadManagerQueue.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Lib/src/main/java/lib/download/DownloadManagerQueue.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.734375" vertical-offset="980" max-vertical-offset="1649">
-              <caret line="77" column="138" selection-start-line="77" selection-start-column="138" selection-end-line="77" selection-end-column="138" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#810#811#0" expanded="true" />
-                <element signature="e#858#859#0" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.18438178" vertical-offset="0" max-vertical-offset="461">
+              <caret line="5" column="35" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -111,8 +106,8 @@
         <option value="$PROJECT_DIR$/Lib/src/main/java/lib/tftp/exception/TFTPFileAlreadyExists.java" />
         <option value="$PROJECT_DIR$/Lib/src/main/java/lib/tftp/SoCeTFTPClient.java" />
         <option value="$PROJECT_DIR$/Lib/src/main/java/lib/tftp/exception/TFTPFileAlreadyExistsException.java" />
-        <option value="$PROJECT_DIR$/Lib/src/main/java/lib/tftp/impl/TFTPClientImpl.java" />
         <option value="$PROJECT_DIR$/Lib/src/main/java/lib/tftp/exception/TFTPFileNotWritableException.java" />
+        <option value="$PROJECT_DIR$/Lib/src/main/java/lib/tftp/impl/TFTPClientImpl.java" />
       </list>
     </option>
   </component>
@@ -1075,7 +1070,11 @@
       <created>1416422046162</created>
       <updated>1416422046162</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="implement tftp feauture.">
+      <created>1416422572479</created>
+      <updated>1416422572479</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1137,7 +1136,8 @@
     <MESSAGE value="resolved Module System." />
     <MESSAGE value="added DownloadManager." />
     <MESSAGE value="added tftp feauture." />
-    <option name="LAST_COMMIT_MESSAGE" value="added tftp feauture." />
+    <MESSAGE value="implement tftp feauture." />
+    <option name="LAST_COMMIT_MESSAGE" value="implement tftp feauture." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1261,14 +1261,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Lib/src/main/java/lib/download/IDownloadManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
-          <caret line="7" column="56" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Lib/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.9262473" vertical-offset="610" max-vertical-offset="2210">
@@ -1343,13 +1335,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Lib/src/main/java/lib/tftp/impl/TFTPClientImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.734375" vertical-offset="980" max-vertical-offset="1649">
-          <caret line="77" column="138" selection-start-line="77" selection-start-column="138" selection-end-line="77" selection-end-column="138" />
+        <state vertical-scroll-proportion="0.7723214" vertical-offset="1099" max-vertical-offset="1785">
+          <caret line="85" column="31" selection-start-line="85" selection-start-column="31" selection-end-line="85" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#810#811#0" expanded="true" />
-            <element signature="e#858#859#0" expanded="true" />
+            <element signature="e#842#843#0" expanded="true" />
+            <element signature="e#890#891#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lib/src/main/java/lib/download/IDownloadManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
+          <caret line="7" column="56" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lib/src/main/java/lib/download/DownloadManagerQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18438178" vertical-offset="0" max-vertical-offset="461">
+          <caret line="5" column="35" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
+          <folding />
         </state>
       </provider>
     </entry>
