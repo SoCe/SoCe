@@ -18,11 +18,11 @@
     </properties>
 
     <dependencies>
-        <!-- <dependency>
+        <dependency>
             <groupId>com.jukusoft.soce.lib</groupId>
             <artifactId>com.jukusoft.soce.lib</artifactId>
             <version>${project.version}</version>
-        </dependency> -->
+        </dependency>
 
         <!-- Log4J -->
         <dependency>

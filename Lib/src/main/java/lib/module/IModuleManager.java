@@ -5,5 +5,8 @@ package lib.module;
  */
 public interface IModuleManager {
     public IModule getModuleByComID (String comID);
+    public void startModules ();
+    public void stopModules ();
     public boolean isLoaded (String comID);
+    public void loadModules (String modulePath);
 }

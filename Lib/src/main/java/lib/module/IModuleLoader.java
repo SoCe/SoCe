@@ -7,7 +7,5 @@ import java.util.List;
  */
 public interface IModuleLoader {
     public void loadModules ();
-    public void startModules ();
-    public void stopModules ();
     public List<IModule> getModules();
 }

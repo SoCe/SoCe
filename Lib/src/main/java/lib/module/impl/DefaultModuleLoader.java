@@ -49,18 +49,8 @@ public class DefaultModuleLoader implements IModuleLoader {
     }
 
     @Override
-    public void startModules() {
-        //
-    }
-
-    @Override
-    public void stopModules() {
-        //
-    }
-
-    @Override
     public List<IModule> getModules() {
-        return null;
+        return this.moduleList;
     }
 
     public static List<IModule> loadModules(File plugDir) throws IOException {
