@@ -15,6 +15,8 @@ public class Main {
         //Log4J
         BasicConfigurator.configure();
 
+        //http://www.torsten-horn.de/techdocs/maven.htm
+
         //http://www.tutorialspoint.com/design_pattern/
 
         //http://www.philipphauer.de/study/se/design-pattern.php
