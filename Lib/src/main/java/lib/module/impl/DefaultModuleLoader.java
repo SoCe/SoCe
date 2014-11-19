@@ -44,7 +44,7 @@ public class DefaultModuleLoader implements IModuleLoader {
             LoggerInstance.getLogger().error("DefaultModuleLoader: IOException in method loadModules() " + e.getLocalizedMessage());
             e.printStackTrace();
         } catch (Exception e) {
-            LoggerInstance.getLogger().error("DefaultModuleLoader: IOException in method loadModules() " + e.getLocalizedMessage());
+            LoggerInstance.getLogger().error("DefaultModuleLoader: Exception in method loadModules() " + e.getLocalizedMessage());
         }
     }
 
