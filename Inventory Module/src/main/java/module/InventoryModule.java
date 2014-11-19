@@ -19,7 +19,7 @@ public class InventoryModule implements IModule {
 
     @Override
     public void setModuleManager(IModuleManager moduleManager) {
-        //
+        //http://www.timomeinen.de/2013/12/maven-copy-artifact-to-different-directory-than-the-local-repository/
     }
 
     @Override

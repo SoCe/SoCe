@@ -12,6 +12,7 @@
         <module>Lib</module>
         <module>Server</module>
         <module>Client</module>
+        <module>Inventory Module</module>
         <module>SoftwareCenter</module>
     </modules>
 
