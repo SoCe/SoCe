@@ -23,6 +23,7 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="Client" />
+        <module name="Inventory Module" />
         <module name="Lib" />
         <module name="Server" />
         <module name="SoftwareCenter" />
