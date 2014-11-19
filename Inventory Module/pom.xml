@@ -40,7 +40,7 @@
                 </executions>
             </plugin>
 
-            <plugin>
+            <!-- <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-dependency-plugin</artifactId>
                 <version>2.9</version>
@@ -59,9 +59,9 @@
                         </configuration>
                     </execution>
                 </executions>
-            </plugin>
+            </plugin> -->
 
-            <plugin>
+            <!-- <plugin>
                 <groupId>com.github.goldin</groupId>
                 <artifactId>copy-maven-plugin</artifactId>
                 <version>0.2.5</version>
@@ -78,7 +78,7 @@
                             <resources>
                                 <resource>
                                     <description>Copy artifact to another directory</description>
-                                    <targetPath>${project.build.directory}/modules</targetPath>
+                                    <targetPath>${project.build.sourceDirectory}/modules</targetPath>
                                     <directory>${project.build.directory}</directory>
                                     <includes>
                                         <include>*.jar</include>
@@ -88,7 +88,7 @@
                         </configuration>
                     </execution>
                 </executions>
-            </plugin>
+            </plugin> -->
         </plugins>
     </build>
 
