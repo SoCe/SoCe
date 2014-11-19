@@ -9,4 +9,6 @@ public interface IModule {
     public void setModuleManager (IModuleManager moduleManager);
     public boolean startModule ();
     public boolean stopModule ();
+    public boolean isClientModule ();
+    public boolean isServerModule ();
 }
