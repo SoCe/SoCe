@@ -5,6 +5,6 @@ package lib.download;
  */
 public interface IDownloadManager {
 
-    public void downloadFile (String file);
+    public void downloadFile (String file, String source);
 
 }
