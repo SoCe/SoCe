@@ -38,4 +38,13 @@ public abstract class ModuleTask implements IModuleTask {
 
     @Override
     public abstract void run();
+
+    @Override
+    public int compareTo(IModuleTask o) {
+        if (o.getPriority() < this.getPriority()) {
+            return -1;
+        } else {
+            return 1;
+        }
+    }
 }
