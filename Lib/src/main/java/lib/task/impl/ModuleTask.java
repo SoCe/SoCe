@@ -13,11 +13,15 @@ public class ModuleTask implements IModuleTask {
 
     @Override
     public void setModuleTaskData(String key, Object object) {
-        //
+        this.moduleTaskData.put(key, object);
     }
 
     @Override
     public Object getModuleTaskData(String key) {
-        return null;
+        if (this.moduleTaskData.containsKey(key)) {
+            return this.moduleTaskData.get(key);
+        } else {
+            return null;
+        }
     }
 }
