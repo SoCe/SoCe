@@ -1,14 +1,14 @@
-package module;
+package module.client;
 
-import lib.module.IModule;
 import lib.module.IModuleManager;
+import lib.module.client.IClientModule;
 
 /**
- * Created by Justin on 19.11.2014.
+ * Created by Justin on 22.11.2014.
  */
-public class InventoryModule implements IModule {
+public class InventoryClientModule implements IClientModule {
     @Override
-     public String getName() {
+    public String getName() {
         return "com.jukusoft.soce.modules.inventory";
     }
 

@@ -1,14 +1,14 @@
-package module;
+package module.server;
 
-import lib.module.IModule;
 import lib.module.IModuleManager;
+import lib.module.server.IServerModule;
 
 /**
- * Created by Justin on 19.11.2014.
+ * Created by Justin on 22.11.2014.
  */
-public class InventoryModule implements IModule {
+public class InventoryServerModule implements IServerModule {
     @Override
-     public String getName() {
+    public String getName() {
         return "com.jukusoft.soce.modules.inventory";
     }
 
