@@ -37,6 +37,8 @@ public class ClientApplication implements IClient {
     public void run() {
         this.getLogger().debug("Start modules.");
 
+        //http://blog.knoldus.com/2011/03/07/testing-rest-with-grizzly/
+
         //load modules
         this.moduleManager = new ModuleManagerImpl(ClientApplication.buildNumber);
         moduleManager.loadModules("./modules");

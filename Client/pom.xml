@@ -37,6 +37,27 @@
             <artifactId>grizzly-framework</artifactId>
             <version>2.3.14</version>
         </dependency>
+
+        <!-- Jersey Core -->
+        <dependency>
+            <groupId>com.sun.jersey</groupId>
+            <artifactId>jersey-core</artifactId>
+            <version>1.18.2</version>
+        </dependency>
+
+        <!-- Jersey JSON -->
+        <dependency>
+            <groupId>com.sun.jersey</groupId>
+            <artifactId>jersey-json</artifactId>
+            <version>1.18.2</version>
+        </dependency>
+
+        <!-- Jersey Client -->
+        <dependency>
+            <groupId>com.sun.jersey</groupId>
+            <artifactId>jersey-client</artifactId>
+            <version>1.18.2</version>
+        </dependency>
     </dependencies>
 
     <build>
