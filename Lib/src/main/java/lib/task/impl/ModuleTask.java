@@ -7,9 +7,10 @@ import java.util.HashMap;
 /**
  * Created by Justin on 22.11.2014.
  */
-public class ModuleTask implements IModuleTask {
+public abstract class ModuleTask implements IModuleTask {
 
     protected HashMap<String,Object> moduleTaskData = new HashMap<String,Object>();
+    protected int priority = 5;
 
     @Override
     public void setModuleTaskData(String key, Object object) {
@@ -24,4 +25,17 @@ public class ModuleTask implements IModuleTask {
             return null;
         }
     }
+
+    @Override
+    public void setPriority(int priority) {
+        this.priority = priority;
+    }
+
+    @Override
+    public int getPriority() {
+        return this.priority;
+    }
+
+    @Override
+    public abstract void run();
 }
