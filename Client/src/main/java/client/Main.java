@@ -30,6 +30,9 @@ public class Main {
         //http://www.tutorialspoint.com/design_pattern/
 
         //http://www.philipphauer.de/study/se/design-pattern.php
+
+        ClientConsole clientConsole = new ClientConsole(clientApplication);
+        clientConsole.run();
     }
 
 }

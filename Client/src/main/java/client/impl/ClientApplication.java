@@ -46,4 +46,8 @@ public class ClientApplication implements IClient {
         //start modules
         moduleManager.startModules();
     }
+
+    public void close () {
+        this.moduleManager.stopModules();
+    }
 }
