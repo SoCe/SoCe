@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef56a392-8411-4f59-aaf5-6fa7624a33c2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Inventory Module/src/main/java/module/client/InventoryClientModule.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Inventory Module/src/main/java/module/server/InventoryServerModule.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Inventory Module/src/main/java/module/InventoryModule.java" afterPath="$PROJECT_DIR$/Inventory Module/src/main/java/module/InventoryModule.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/src/main/java/lib/queue/impl/SoCePriorityQueue.java" afterPath="$PROJECT_DIR$/Lib/src/main/java/lib/queue/impl/SoCePriorityQueue.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/src/main/java/lib/queue/impl/SoCeQueue.java" afterPath="$PROJECT_DIR$/Lib/src/main/java/lib/queue/impl/SoCeQueue.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="SoCe.iws" />
@@ -61,33 +60,33 @@
       <file leaf-file-name="SoCeQueue.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Lib/src/main/java/lib/queue/impl/SoCeQueue.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
-              <caret line="9" column="52" selection-start-line="9" selection-start-column="52" selection-end-line="9" selection-end-column="52" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="302" max-vertical-offset="1003">
+              <caret line="50" column="37" selection-start-line="50" selection-start-column="37" selection-end-line="50" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#600#601#0" expanded="true" />
+                <element signature="e#638#639#0" expanded="true" />
+                <element signature="e#1010#1011#0" expanded="true" />
+                <element signature="e#1054#1055#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SoCePriorityQueue.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="SoCePriorityQueue.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Lib/src/main/java/lib/queue/impl/SoCePriorityQueue.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
-              <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
+            <state vertical-scroll-proportion="1.4308131" vertical-offset="0" max-vertical-offset="1156">
+              <caret line="59" column="37" selection-start-line="59" selection-start-column="37" selection-end-line="59" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#401#402#0" expanded="true" />
+                <element signature="e#445#446#0" expanded="true" />
+                <element signature="e#813#814#0" expanded="true" />
+                <element signature="e#851#852#0" expanded="true" />
+                <element signature="e#1223#1224#0" expanded="true" />
+                <element signature="e#1267#1268#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IAdministrationModule.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Lib/src/main/java/lib/module/administration/IAdministrationModule.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.16975749" vertical-offset="0" max-vertical-offset="701">
-              <caret line="7" column="56" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -137,14 +136,14 @@
         <option value="$PROJECT_DIR$/Lib/src/main/java/lib/task/impl/ModuleTask.java" />
         <option value="$PROJECT_DIR$/Lib/src/main/java/lib/queue/ISoCeQueue.java" />
         <option value="$PROJECT_DIR$/Lib/src/main/java/lib/queue/ISoCePriorityQueue.java" />
-        <option value="$PROJECT_DIR$/Lib/src/main/java/lib/queue/impl/SoCeQueue.java" />
-        <option value="$PROJECT_DIR$/Lib/src/main/java/lib/queue/impl/SoCePriorityQueue.java" />
         <option value="$PROJECT_DIR$/Lib/src/main/java/lib/module/IClientModule.java" />
         <option value="$PROJECT_DIR$/Lib/src/main/java/lib/module/server/IServerModule.java" />
         <option value="$PROJECT_DIR$/Lib/src/main/java/lib/module/administration/IAdministrationModule.java" />
         <option value="$PROJECT_DIR$/Inventory Module/src/main/java/module/client/InventoryClientModule.java" />
         <option value="$PROJECT_DIR$/Inventory Module/src/main/java/module/InventoryModule.java" />
         <option value="$PROJECT_DIR$/Inventory Module/src/main/java/module/server/InventoryServerModule.java" />
+        <option value="$PROJECT_DIR$/Lib/src/main/java/lib/queue/impl/SoCeQueue.java" />
+        <option value="$PROJECT_DIR$/Lib/src/main/java/lib/queue/impl/SoCePriorityQueue.java" />
       </list>
     </option>
   </component>
@@ -1621,7 +1620,11 @@
       <created>1416678490173</created>
       <updated>1416678490173</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="added class InventoryClientModule and InventoryServerModule to Inventory Module.">
+      <created>1416678682864</created>
+      <updated>1416678682864</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1668,7 +1671,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="added docs." />
     <MESSAGE value="added interface IModule." />
     <MESSAGE value="added implementation of IModuleLoader DefaultModuleLoader." />
     <MESSAGE value="added interface IModuleManager." />
@@ -1693,10 +1695,13 @@
     <MESSAGE value="added interface ISoCeQueue." />
     <MESSAGE value="added interface IClientModule and interface IServerModule." />
     <MESSAGE value="added interface IAdministrationModule." />
-    <option name="LAST_COMMIT_MESSAGE" value="added interface IAdministrationModule." />
+    <MESSAGE value="added class InventoryClientModule and InventoryServerModule to Inventory Module." />
+    <option name="LAST_COMMIT_MESSAGE" value="added class InventoryClientModule and InventoryServerModule to Inventory Module." />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -2014,14 +2019,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Client/src/main/java/client/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561">
-          <caret line="22" column="47" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Lib/src/main/java/lib/queue/ISoCeQueue.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
@@ -2035,26 +2032,6 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
           <caret line="5" column="59" selection-start-line="5" selection-start-column="59" selection-end-line="5" selection-end-column="59" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Lib/src/main/java/lib/queue/impl/SoCeQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
-          <caret line="9" column="52" selection-start-line="9" selection-start-column="52" selection-end-line="9" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Lib/src/main/java/lib/queue/impl/SoCePriorityQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
-          <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2091,6 +2068,44 @@
         <state vertical-scroll-proportion="0.16975749" vertical-offset="0" max-vertical-offset="701">
           <caret line="7" column="56" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/src/main/java/client/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561">
+          <caret line="22" column="47" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lib/src/main/java/lib/queue/impl/SoCeQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="302" max-vertical-offset="1003">
+          <caret line="50" column="37" selection-start-line="50" selection-start-column="37" selection-end-line="50" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#600#601#0" expanded="true" />
+            <element signature="e#638#639#0" expanded="true" />
+            <element signature="e#1010#1011#0" expanded="true" />
+            <element signature="e#1054#1055#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lib/src/main/java/lib/queue/impl/SoCePriorityQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.4308131" vertical-offset="0" max-vertical-offset="1156">
+          <caret line="59" column="37" selection-start-line="59" selection-start-column="37" selection-end-line="59" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#401#402#0" expanded="true" />
+            <element signature="e#445#446#0" expanded="true" />
+            <element signature="e#813#814#0" expanded="true" />
+            <element signature="e#851#852#0" expanded="true" />
+            <element signature="e#1223#1224#0" expanded="true" />
+            <element signature="e#1267#1268#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
