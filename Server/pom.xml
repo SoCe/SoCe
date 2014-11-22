@@ -51,6 +51,13 @@
             <artifactId>hazelcast-client</artifactId>
             <version>3.3.1</version>
         </dependency>
+
+        <!-- Grizzly -->
+        <dependency>
+            <groupId>org.glassfish.grizzly</groupId>
+            <artifactId>grizzly-framework</artifactId>
+            <version>2.3.14</version>
+        </dependency>
     </dependencies>
 
     <build>

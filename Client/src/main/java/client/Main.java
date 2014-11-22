@@ -1,5 +1,6 @@
 package client;
 
+import client.impl.ClientApplication;
 import module.impl.ModuleManagerImpl;
 import org.apache.log4j.BasicConfigurator;
 
@@ -18,9 +19,11 @@ public class Main {
         //Log4J
         BasicConfigurator.configure();
 
-        //load modules
-        ModuleManagerImpl moduleManager = new ModuleManagerImpl(Main.buildNumber);
-        moduleManager.loadModules("./modules");
+        ClientApplication clientApplication = new ClientApplication();
+        Thread thread = new Thread(clientApplication);
+        thread.start();
+
+        //http://www.oracle.com/technetwork/server-storage/ts-4883-1-159000.pdf
 
         //http://www.torsten-horn.de/techdocs/maven.htm
 
