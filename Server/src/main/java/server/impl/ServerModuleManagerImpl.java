@@ -1,23 +1,23 @@
-package module.impl;
+package server.impl;
 
 import lib.logger.LoggerInstance;
 import lib.module.IModule;
 import lib.module.IModuleManager;
-import lib.module.client.IClientModuleManager;
 import lib.module.impl.DefaultModuleLoader;
+import lib.module.server.IServerModuleManager;
 
 import java.util.HashMap;
 
 /**
- * Created by Justin on 19.11.2014.
+ * Created by Justin on 23.11.2014.
  */
-public class ModuleManagerImpl implements IClientModuleManager {
+public class ServerModuleManagerImpl implements IServerModuleManager {
 
     protected HashMap<String,IModule> modules = new HashMap<String,IModule>();
     protected HashMap<String,Boolean> isModuleLoadedList = new HashMap<String,Boolean>();
     protected int buildNumber = 0;
 
-    public ModuleManagerImpl (int buildNumber) {
+    public ServerModuleManagerImpl (int buildNumber) {
         this.buildNumber = buildNumber;
     }
 
@@ -75,4 +75,5 @@ public class ModuleManagerImpl implements IClientModuleManager {
             }
         }
     }
+
 }
