@@ -27,7 +27,7 @@ public class ClientConsole {
             try {
                 String line = reader.readLine();
 
-                if (line.equals("quit")) {
+                if (line.equals("quit") || line.equalsIgnoreCase("quit")) {
                     this.clientApplication.close();
                 }
             } catch (IOException e) {
