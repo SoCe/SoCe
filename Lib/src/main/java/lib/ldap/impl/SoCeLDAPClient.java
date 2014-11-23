@@ -46,6 +46,8 @@ public class SoCeLDAPClient implements ILDAPClient {
         env.put(Context.INITIAL_CONTEXT_FACTORY,"com.sun.jndi.ldap.LdapCtxFactory");
         env.put(Context.PROVIDER_URL, "ldap://" + this.host + ":" + this.port + "");
 
+        //http://www.javaworld.com/article/2076073/java-web-development/ldap-and-jndi--together-forever.html
+
         //Authentification
         env.put(Context.SECURITY_AUTHENTICATION,"simple");
         env.put(Context.SECURITY_PRINCIPAL,"cn=" + this.username);

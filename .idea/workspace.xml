@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef56a392-8411-4f59-aaf5-6fa7624a33c2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/src/main/java/server/ServerConsole.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/src/main/java/client/impl/ClientApplication.java" afterPath="$PROJECT_DIR$/Client/src/main/java/client/impl/ClientApplication.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/src/main/java/lib/module/client/IClientModuleManager.java" afterPath="$PROJECT_DIR$/Lib/src/main/java/lib/module/client/IClientModuleManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/src/main/java/lib/module/server/IServerModuleManager.java" afterPath="$PROJECT_DIR$/Lib/src/main/java/lib/module/server/IServerModuleManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/src/main/java/module/impl/ModuleManagerImpl.java" afterPath="$PROJECT_DIR$/Client/src/main/java/module/impl/ModuleManagerImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server/src/main/java/server/impl/ServerApplication.java" afterPath="$PROJECT_DIR$/Server/src/main/java/server/impl/ServerApplication.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server/src/main/java/server/ServerMain.java" afterPath="$PROJECT_DIR$/Server/src/main/java/server/ServerMain.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server/src/main/java/server/impl/ServerModuleManagerImpl.java" afterPath="$PROJECT_DIR$/Server/src/main/java/server/impl/ServerModuleManagerImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lib/src/main/java/lib/storage/INoSQLDatabase.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/src/main/java/lib/ldap/impl/SoCeLDAPClient.java" afterPath="$PROJECT_DIR$/Lib/src/main/java/lib/ldap/impl/SoCeLDAPClient.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="SoCe.iws" />
@@ -53,10 +47,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ServerMain.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ServerMain.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Server/src/main/java/server/ServerMain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.50927246" vertical-offset="0" max-vertical-offset="701">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
               <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -75,11 +69,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SoCeLDAPClient.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="SoCeLDAPClient.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Lib/src/main/java/lib/ldap/impl/SoCeLDAPClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="607" max-vertical-offset="1139">
-              <caret line="50" column="66" selection-start-line="50" selection-start-column="66" selection-end-line="50" selection-end-column="66" />
+            <state vertical-scroll-proportion="-0.73617023" vertical-offset="652" max-vertical-offset="1173">
+              <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#615#616#0" expanded="true" />
@@ -118,7 +112,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/Lib/src/main/java/lib/tftp/listener/FileReceivedListener.java" />
         <option value="$PROJECT_DIR$/Lib/src/main/java/lib/tftp/listener/ConnectionLost.java" />
         <option value="$PROJECT_DIR$/Lib/src/main/java/lib/storage/IStorageManager.java" />
         <option value="$PROJECT_DIR$/Lib/src/main/java/lib/tftp/listener/TFTPConnectionLostListener.java" />
@@ -159,7 +152,6 @@
         <option value="$PROJECT_DIR$/Lib/src/main/java/lib/cluster/SoCeServerStateUpdateListener.java" />
         <option value="$PROJECT_DIR$/Client/src/main/java/client/ClientConsole.java" />
         <option value="$PROJECT_DIR$/Lib/src/main/java/lib/ldap/ILDAPClient.java" />
-        <option value="$PROJECT_DIR$/Lib/src/main/java/lib/ldap/impl/SoCeLDAPClient.java" />
         <option value="$PROJECT_DIR$/Lib/src/main/java/lib/server/IServer.java" />
         <option value="$PROJECT_DIR$/Lib/src/main/java/lib/module/client/IClientModuleManager.java" />
         <option value="$PROJECT_DIR$/Lib/src/main/java/lib/module/server/IServerModuleManager.java" />
@@ -169,6 +161,8 @@
         <option value="$PROJECT_DIR$/Server/src/main/java/server/impl/ServerApplication.java" />
         <option value="$PROJECT_DIR$/Server/src/main/java/server/ServerConsole.java" />
         <option value="$PROJECT_DIR$/Server/src/main/java/server/ServerMain.java" />
+        <option value="$PROJECT_DIR$/Lib/src/main/java/lib/ldap/impl/SoCeLDAPClient.java" />
+        <option value="$PROJECT_DIR$/Lib/src/main/java/lib/storage/INoSQLDatabase.java" />
       </list>
     </option>
   </component>
@@ -1622,7 +1616,7 @@
       <recent name="lib.logger" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Client">
+  <component name="RunManager" selected="Application.Server">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
@@ -2096,7 +2090,11 @@
       <created>1416768049794</created>
       <updated>1416768049794</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="added class ServerConsole.">
+      <created>1416768512498</created>
+      <updated>1416768512498</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2120,7 +2118,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25748503" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31687242" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31687242" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32921812" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -2143,7 +2141,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="change pom.xml." />
     <MESSAGE value="resolved Module System." />
     <MESSAGE value="added DownloadManager." />
     <MESSAGE value="implement tftp feauture." />
@@ -2168,7 +2165,8 @@
     <MESSAGE value="added LDAP integration." />
     <MESSAGE value="change ClientApplication." />
     <MESSAGE value="added interface IClientModuleManager and IServerModuleManager." />
-    <option name="LAST_COMMIT_MESSAGE" value="added interface IClientModuleManager and IServerModuleManager." />
+    <MESSAGE value="added class ServerConsole." />
+    <option name="LAST_COMMIT_MESSAGE" value="added class ServerConsole." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2180,13 +2178,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Lib/src/main/java/lib/tftp/SoCeTFTPClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5045662" vertical-offset="0" max-vertical-offset="438">
-          <caret line="13" column="96" selection-start-line="13" selection-start-column="96" selection-end-line="13" selection-end-column="96" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Lib/src/main/java/lib/tftp/listener/TFTPConnectionLostListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.22125813" vertical-offset="0" max-vertical-offset="461">
@@ -2327,13 +2318,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Lib/src/main/java/lib/server/hazelcast/HazelcastManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22566372" vertical-offset="0" max-vertical-offset="1275">
-          <caret line="13" column="51" selection-start-line="13" selection-start-column="51" selection-end-line="13" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Lib/src/main/java/lib/logger/LoggerInstance.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.34304932" vertical-offset="0" max-vertical-offset="446">
@@ -2454,32 +2438,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Lib/src/main/java/lib/ldap/ILDAPClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
-          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Lib/src/main/java/lib/ldap/impl/SoCeLDAPClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="607" max-vertical-offset="1139">
-          <caret line="50" column="66" selection-start-line="50" selection-start-column="66" selection-end-line="50" selection-end-column="66" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#615#616#0" expanded="true" />
-            <element signature="e#647#648#0" expanded="true" />
-            <element signature="e#692#693#0" expanded="true" />
-            <element signature="e#724#725#0" expanded="true" />
-            <element signature="e#775#776#0" expanded="true" />
-            <element signature="e#807#808#0" expanded="true" />
-            <element signature="e#849#850#0" expanded="true" />
-            <element signature="e#881#882#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Lib/src/main/java/lib/activedirectory/SoCeActiveDirectory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
@@ -2509,7 +2467,7 @@
         <state vertical-scroll-proportion="0.30425057" vertical-offset="0" max-vertical-offset="447">
           <caret line="8" column="54" selection-start-line="8" selection-start-column="54" selection-end-line="8" selection-end-column="54" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2519,7 +2477,7 @@
         <state vertical-scroll-proportion="0.34228188" vertical-offset="0" max-vertical-offset="447">
           <caret line="9" column="43" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2600,10 +2558,52 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Server/src/main/java/server/ServerMain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.50927246" vertical-offset="0" max-vertical-offset="701">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
           <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lib/src/main/java/lib/ldap/ILDAPClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
+          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lib/src/main/java/lib/server/hazelcast/HazelcastManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34228188" vertical-offset="0" max-vertical-offset="1275">
+          <caret line="13" column="51" selection-start-line="13" selection-start-column="51" selection-end-line="13" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lib/src/main/java/lib/storage/INoSQLDatabase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1901566" vertical-offset="0" max-vertical-offset="447">
+          <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lib/src/main/java/lib/ldap/impl/SoCeLDAPClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.73617023" vertical-offset="652" max-vertical-offset="1173">
+          <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#615#616#0" expanded="true" />
+            <element signature="e#647#648#0" expanded="true" />
+            <element signature="e#692#693#0" expanded="true" />
+            <element signature="e#724#725#0" expanded="true" />
+            <element signature="e#775#776#0" expanded="true" />
+            <element signature="e#807#808#0" expanded="true" />
+            <element signature="e#849#850#0" expanded="true" />
+            <element signature="e#881#882#0" expanded="true" />
           </folding>
         </state>
       </provider>
