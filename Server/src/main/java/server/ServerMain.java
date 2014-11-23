@@ -20,6 +20,8 @@ public class ServerMain {
         SoCeServer server = new SoCeServer();
         server.setServerID(1);
         server.setServerName("Main Server #1");
+        server.setHost("localhost");
+        server.setPort(50999);
 
         cluster.addServer(server);
     }
