@@ -14,9 +14,12 @@ public class ServerMain {
         //Log4J
         BasicConfigurator.configure();
 
-        ServerApplication clientApplication = new ServerApplication();
-        Thread thread = new Thread(clientApplication);
+        ServerApplication serverApplication = new ServerApplication();
+        Thread thread = new Thread(serverApplication);
         thread.start();
+
+        ServerConsole console = new ServerConsole(serverApplication);
+        console.run();
     }
 
 }

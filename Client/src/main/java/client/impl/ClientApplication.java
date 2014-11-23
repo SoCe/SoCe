@@ -40,7 +40,7 @@ public class ClientApplication implements IClient {
         //http://blog.knoldus.com/2011/03/07/testing-rest-with-grizzly/
 
         //load modules
-        this.moduleManager = new ModuleManagerImpl(ClientApplication.buildNumber);
+        this.moduleManager = new ModuleManagerImpl(this, ClientApplication.buildNumber);
         moduleManager.loadModules("./modules");
 
         //start modules

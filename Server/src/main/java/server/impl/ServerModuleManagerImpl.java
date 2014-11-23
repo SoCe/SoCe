@@ -5,6 +5,7 @@ import lib.module.IModule;
 import lib.module.IModuleManager;
 import lib.module.impl.DefaultModuleLoader;
 import lib.module.server.IServerModuleManager;
+import lib.server.IServer;
 
 import java.util.HashMap;
 
@@ -16,8 +17,10 @@ public class ServerModuleManagerImpl implements IServerModuleManager {
     protected HashMap<String,IModule> modules = new HashMap<String,IModule>();
     protected HashMap<String,Boolean> isModuleLoadedList = new HashMap<String,Boolean>();
     protected int buildNumber = 0;
+    protected IServer server = null;
 
-    public ServerModuleManagerImpl (int buildNumber) {
+    public ServerModuleManagerImpl (IServer server, int buildNumber) {
+        this.server = server;
         this.buildNumber = buildNumber;
     }
 
@@ -76,4 +79,8 @@ public class ServerModuleManagerImpl implements IServerModuleManager {
         }
     }
 
+    @Override
+    public IServer getServerApplication() {
+        return this.server;
+    }
 }

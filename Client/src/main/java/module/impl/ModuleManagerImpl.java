@@ -1,5 +1,6 @@
 package module.impl;
 
+import lib.client.IClient;
 import lib.logger.LoggerInstance;
 import lib.module.IModule;
 import lib.module.IModuleManager;
@@ -16,8 +17,10 @@ public class ModuleManagerImpl implements IClientModuleManager {
     protected HashMap<String,IModule> modules = new HashMap<String,IModule>();
     protected HashMap<String,Boolean> isModuleLoadedList = new HashMap<String,Boolean>();
     protected int buildNumber = 0;
+    protected IClient client = null;
 
-    public ModuleManagerImpl (int buildNumber) {
+    public ModuleManagerImpl (IClient client, int buildNumber) {
+        this.client = client;
         this.buildNumber = buildNumber;
     }
 
@@ -74,5 +77,10 @@ public class ModuleManagerImpl implements IClientModuleManager {
                 LoggerInstance.getLogger().debug("ModuleManagerImpl: module " + module.getName() + " BuildNumber " + module.getBuildNumber() + " is not compatible with the application buildNumber " + this.buildNumber + ".");
             }
         }
+    }
+
+    @Override
+    public IClient getClientApplication() {
+        return this.client;
     }
 }

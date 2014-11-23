@@ -58,7 +58,7 @@ public class ServerApplication implements IServer {
         cluster.addServer(server);
 
         //load modules
-        this.moduleManager = new ServerModuleManagerImpl(ServerApplication.buildNumber);
+        this.moduleManager = new ServerModuleManagerImpl(this, ServerApplication.buildNumber);
         moduleManager.loadModules("./modules");
 
         //start modules
