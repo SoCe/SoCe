@@ -43,6 +43,13 @@ public class ClientApplication implements IClient {
         this.moduleManager = new ModuleManagerImpl(this, ClientApplication.buildNumber);
         moduleManager.loadModules("./modules");
 
+        //start network client
+        SoCeClient client = new SoCeClient("localhost", 50999, this);
+
+        //start client in a new thread
+        Thread thread = new Thread(client);
+        thread.start();
+
         //start modules
         moduleManager.startModules();
     }
