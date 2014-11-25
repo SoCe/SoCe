@@ -3,6 +3,8 @@ package client.impl;
 import lib.client.IClient;
 import lib.logger.LoggerInstance;
 import lib.module.IModuleManager;
+import lib.network.message.handler.INetworkHandlerManager;
+import lib.network.message.handler.impl.DefaultNetworkHandlerManager;
 import lib.queue.impl.SoCePriorityQueue;
 import lib.task.IModuleTask;
 import module.impl.ModuleManagerImpl;
@@ -17,6 +19,7 @@ public class ClientApplication implements IClient {
     protected static int buildNumber = 1;
     ModuleManagerImpl moduleManager = null;
     private Logger logger = LoggerFactory.getLogger(ClientApplication.class);
+    protected DefaultNetworkHandlerManager defaultNetworkHandlerManager = null;
 
     @Override
     public SoCePriorityQueue<IModuleTask> getQueue() {
@@ -34,7 +37,14 @@ public class ClientApplication implements IClient {
     }
 
     @Override
+    public INetworkHandlerManager getNetworkHandlerManager() {
+        return null;
+    }
+
+    @Override
     public void run() {
+        defaultNetworkHandlerManager = new DefaultNetworkHandlerManager();
+
         this.getLogger().debug("Start modules.");
 
         //http://blog.knoldus.com/2011/03/07/testing-rest-with-grizzly/

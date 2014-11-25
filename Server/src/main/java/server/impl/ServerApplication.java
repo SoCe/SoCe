@@ -12,6 +12,8 @@ import lib.cluster.SoCeCluster;
 import lib.cluster.SoCeServer;
 import lib.ldap.impl.SoCeLDAPClient;
 import lib.module.IModuleManager;
+import lib.network.message.handler.INetworkHandlerManager;
+import lib.network.message.handler.impl.DefaultNetworkHandlerManager;
 import lib.queue.impl.SoCePriorityQueue;
 import lib.server.IServer;
 import lib.task.IModuleTask;
@@ -28,6 +30,7 @@ public class ServerApplication implements IServer {
     ServerModuleManagerImpl moduleManager = null;
     private Logger logger = LoggerFactory.getLogger(ServerApplication.class);
     protected SoCeServer server = null;
+    protected DefaultNetworkHandlerManager defaultNetworkHandlerManager = null;
 
     @Override
     public SoCePriorityQueue<IModuleTask> getQueue() {
@@ -50,7 +53,14 @@ public class ServerApplication implements IServer {
     }
 
     @Override
+    public INetworkHandlerManager getNetworkHandlerManager() {
+        return this.defaultNetworkHandlerManager;
+    }
+
+    @Override
     public void run() {
+        this.defaultNetworkHandlerManager = new DefaultNetworkHandlerManager();
+
         this.getLogger().debug("Start modules.");
 
         //http://blog.knoldus.com/2011/03/07/testing-rest-with-grizzly/
