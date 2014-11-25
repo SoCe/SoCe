@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef56a392-8411-4f59-aaf5-6fa7624a33c2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/src/main/java/lib/client/IClient.java" afterPath="$PROJECT_DIR$/Lib/src/main/java/lib/client/IClient.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/src/main/java/lib/server/IServer.java" afterPath="$PROJECT_DIR$/Lib/src/main/java/lib/server/IServer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server/src/main/java/server/impl/ServerApplication.java" afterPath="$PROJECT_DIR$/Server/src/main/java/server/impl/ServerApplication.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server/src/main/java/server/handler/ServerInfoHandler.java" afterPath="$PROJECT_DIR$/Server/src/main/java/server/handler/ServerInfoHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/src/main/java/client/impl/ClientApplication.java" afterPath="$PROJECT_DIR$/Client/src/main/java/client/impl/ClientApplication.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="SoCe.iws" />
@@ -39,10 +36,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ServerApplication.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ServerApplication.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Server/src/main/java/server/impl/ServerApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.35103244" vertical-offset="425" max-vertical-offset="1428">
+            <state vertical-scroll-proportion="0.0" vertical-offset="425" max-vertical-offset="1428">
               <caret line="71" column="98" selection-start-line="71" selection-start-column="98" selection-end-line="71" selection-end-column="98" />
               <folding>
                 <element signature="e#2025#2026#0" expanded="true" />
@@ -90,14 +87,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ClientApplication.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ClientApplication.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Client/src/main/java/client/impl/ClientApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1054">
-              <caret line="45" column="74" selection-start-line="45" selection-start-column="74" selection-end-line="45" selection-end-column="74" />
+            <state vertical-scroll-proportion="0.5014749" vertical-offset="289" max-vertical-offset="1173">
+              <caret line="53" column="98" selection-start-line="53" selection-start-column="98" selection-end-line="53" selection-end-column="98" />
               <folding>
-                <element signature="e#1110#1111#0" expanded="true" />
-                <element signature="e#1137#1138#0" expanded="true" />
+                <element signature="e#1242#1243#0" expanded="true" />
+                <element signature="e#1269#1270#0" expanded="true" />
+                <element signature="e#1346#1347#0" expanded="true" />
+                <element signature="e#1395#1396#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -179,7 +178,6 @@
         <option value="$PROJECT_DIR$/Lib/src/main/java/lib/network/message/handler/NetworkHandlerManager.java" />
         <option value="$PROJECT_DIR$/Lib/src/main/java/lib/network/message/handler/INetworkHandlerManager.java" />
         <option value="$PROJECT_DIR$/Lib/src/main/java/lib/network/message/handler/impl/DefaultNetworkHandlerManager.java" />
-        <option value="$PROJECT_DIR$/Client/src/main/java/client/impl/ClientApplication.java" />
         <option value="$PROJECT_DIR$/Lib/src/main/java/lib/network/message/impl/ServerInfoMessage.java" />
         <option value="$PROJECT_DIR$/Client/src/main/java/client/impl/SoCeClient.java" />
         <option value="$PROJECT_DIR$/Lib/src/main/java/lib/network/message/handler/INetworkHandler.java" />
@@ -189,6 +187,7 @@
         <option value="$PROJECT_DIR$/Lib/src/main/java/lib/client/IClient.java" />
         <option value="$PROJECT_DIR$/Lib/src/main/java/lib/server/IServer.java" />
         <option value="$PROJECT_DIR$/Server/src/main/java/server/impl/ServerApplication.java" />
+        <option value="$PROJECT_DIR$/Client/src/main/java/client/impl/ClientApplication.java" />
       </list>
     </option>
   </component>
@@ -2434,7 +2433,11 @@
       <created>1416945201958</created>
       <updated>1416945201958</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="implement getNetworkHandlerFactory in class ServerApplication.">
+      <created>1416945432715</created>
+      <updated>1416945432715</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2481,7 +2484,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="added interface ISoCeQueue." />
     <MESSAGE value="added interface IClientModule and interface IServerModule." />
     <MESSAGE value="added interface IAdministrationModule." />
     <MESSAGE value="added class InventoryClientModule and InventoryServerModule to Inventory Module." />
@@ -2506,7 +2508,8 @@
     <MESSAGE value="change INetworkHandler." />
     <MESSAGE value="change interface INetworkHandler." />
     <MESSAGE value="implement method clone () in class DefaultNetworkHandler." />
-    <option name="LAST_COMMIT_MESSAGE" value="implement method clone () in class DefaultNetworkHandler." />
+    <MESSAGE value="implement getNetworkHandlerFactory in class ServerApplication." />
+    <option name="LAST_COMMIT_MESSAGE" value="implement getNetworkHandlerFactory in class ServerApplication." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2791,17 +2794,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Client/src/main/java/client/impl/ClientApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1054">
-          <caret line="45" column="74" selection-start-line="45" selection-start-column="74" selection-end-line="45" selection-end-column="74" />
-          <folding>
-            <element signature="e#1110#1111#0" expanded="true" />
-            <element signature="e#1137#1138#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Server/src/main/java/server/impl/ServerManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1224">
@@ -2940,11 +2932,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Server/src/main/java/server/impl/ServerApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35103244" vertical-offset="425" max-vertical-offset="1428">
+        <state vertical-scroll-proportion="0.0" vertical-offset="425" max-vertical-offset="1428">
           <caret line="71" column="98" selection-start-line="71" selection-start-column="98" selection-end-line="71" selection-end-column="98" />
           <folding>
             <element signature="e#2025#2026#0" expanded="true" />
             <element signature="e#2074#2075#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/src/main/java/client/impl/ClientApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5014749" vertical-offset="289" max-vertical-offset="1173">
+          <caret line="53" column="98" selection-start-line="53" selection-start-column="98" selection-end-line="53" selection-end-column="98" />
+          <folding>
+            <element signature="e#1242#1243#0" expanded="true" />
+            <element signature="e#1269#1270#0" expanded="true" />
+            <element signature="e#1346#1347#0" expanded="true" />
+            <element signature="e#1395#1396#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -4,6 +4,7 @@ import lib.client.IClient;
 import lib.logger.LoggerInstance;
 import lib.module.IModuleManager;
 import lib.network.message.handler.INetworkHandlerManager;
+import lib.network.message.handler.factory.NetworkHandlerFactory;
 import lib.network.message.handler.impl.DefaultNetworkHandlerManager;
 import lib.queue.impl.SoCePriorityQueue;
 import lib.task.IModuleTask;
@@ -20,6 +21,7 @@ public class ClientApplication implements IClient {
     ModuleManagerImpl moduleManager = null;
     private Logger logger = LoggerFactory.getLogger(ClientApplication.class);
     protected DefaultNetworkHandlerManager defaultNetworkHandlerManager = null;
+    protected NetworkHandlerFactory networkHandlerFactory = null;
 
     @Override
     public SoCePriorityQueue<IModuleTask> getQueue() {
@@ -42,8 +44,14 @@ public class ClientApplication implements IClient {
     }
 
     @Override
+    public NetworkHandlerFactory getNetworkHandlerFactory() {
+        return this.networkHandlerFactory;
+    }
+
+    @Override
     public void run() {
-        defaultNetworkHandlerManager = new DefaultNetworkHandlerManager();
+        this.defaultNetworkHandlerManager = new DefaultNetworkHandlerManager();
+        this.networkHandlerFactory = new NetworkHandlerFactory(this.defaultNetworkHandlerManager);
 
         this.getLogger().debug("Start modules.");
 
