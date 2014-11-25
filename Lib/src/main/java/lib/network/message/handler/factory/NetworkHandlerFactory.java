@@ -3,6 +3,7 @@ package lib.network.message.handler.factory;
 import lib.network.message.INetworkMessage;
 import lib.network.message.handler.INetworkHandler;
 import lib.network.message.handler.INetworkHandlerManager;
+import lib.network.message.handler.impl.DefaultNetworkHandler;
 
 /**
  * Created by Justin on 25.11.2014.
@@ -20,6 +21,11 @@ public class NetworkHandlerFactory {
 
         //http://howtodoinjava.com/2013/01/04/prototype-design-pattern-in-java/
 
-        return (INetworkHandler) handlerPrototyp;
+        try {
+            return (INetworkHandler) handlerPrototyp.clone();
+        } catch (CloneNotSupportedException e) {
+            e.printStackTrace();
+            return new DefaultNetworkHandler();
+        }
     }
 }

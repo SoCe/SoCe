@@ -12,4 +12,9 @@ public class DefaultNetworkHandler implements INetworkHandler {
     public void receive(ChannelHandlerContext ctx, INetworkMessage message) {
         //
     }
+
+    @Override
+    public INetworkHandler clone() throws CloneNotSupportedException {
+        return (INetworkHandler) super.clone();
+    }
 }

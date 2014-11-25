@@ -8,4 +8,5 @@ import lib.network.message.INetworkMessage;
  */
 public interface INetworkHandler extends Cloneable {
     public void receive (ChannelHandlerContext ctx, INetworkMessage message);
+    public INetworkHandler clone() throws CloneNotSupportedException;
 }
