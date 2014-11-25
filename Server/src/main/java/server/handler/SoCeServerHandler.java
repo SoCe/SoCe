@@ -33,6 +33,8 @@ public class SoCeServerHandler extends ChannelHandlerAdapter {
 
             //http://www.cowtowncoder.com/blog/archives/2010/08/entry_409.html
 
+            //http://www.mkyong.com/java/how-do-convert-java-object-to-from-json-format-gson-api/
+
             /*
             *  A ChannelFuture represents an I/O operation which has not yet occurred.
             *  It means, any requested operation might not have been performed yet
