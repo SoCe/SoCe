@@ -65,6 +65,13 @@
             <artifactId>jersey-server</artifactId>
             <version>1.18.2</version>
         </dependency>
+
+        <!-- Netty -->
+        <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-all</artifactId>
+            <version>5.0.0.Alpha1</version>
+        </dependency>
     </dependencies>
 
     <build>

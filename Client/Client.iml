@@ -22,6 +22,7 @@
     <orderEntry type="library" name="Maven: org.ini4j:ini4j:0.3.3" level="project" />
     <orderEntry type="library" name="Maven: commons-net:commons-net:3.3" level="project" />
     <orderEntry type="library" name="Maven: org.glassfish.grizzly:grizzly-framework:2.3.14" level="project" />
+    <orderEntry type="library" name="Maven: io.netty:netty-all:5.0.0.Alpha1" level="project" />
     <orderEntry type="library" name="Maven: org.apache.maven.plugins:maven-jar-plugin:2.5" level="project" />
     <orderEntry type="library" name="Maven: org.apache.maven:maven-plugin-api:2.0.6" level="project" />
     <orderEntry type="library" name="Maven: org.apache.maven:maven-core:2.0.6" level="project" />
