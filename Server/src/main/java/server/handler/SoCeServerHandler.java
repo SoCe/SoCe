@@ -31,6 +31,8 @@ public class SoCeServerHandler extends ChannelHandlerAdapter {
             final ByteBuf buffer = ctx.alloc().buffer(serverInfo.getBytes("UTF-8").length);
             buffer.writeBytes(serverInfo.getBytes("UTF-8"));
 
+            //http://www.cowtowncoder.com/blog/archives/2010/08/entry_409.html
+
             /*
             *  A ChannelFuture represents an I/O operation which has not yet occurred.
             *  It means, any requested operation might not have been performed yet
