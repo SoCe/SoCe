@@ -6,6 +6,8 @@ import io.netty.channel.ChannelFutureListener;
 import io.netty.channel.ChannelHandlerAdapter;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.util.ReferenceCountUtil;
+import server.ServerMain;
+import server.impl.ServerApplication;
 
 import java.io.UnsupportedEncodingException;
 
@@ -19,7 +21,12 @@ public class SoCeServerHandler extends ChannelHandlerAdapter {
         //final ByteBuf time = ctx.alloc().buffer(4);
         //time.writeInt((int) (System.currentTimeMillis() / 1000L + 2208988800L));
 
-        String serverInfo = "";
+        String serverInfo = "SoCe Server\n" +
+                "Version: 1.0.0\n" +
+                "Build: 1\n" +
+                "\n" +
+                "----\n" +
+                "- Public Key -";
         try {
             final ByteBuf buffer = ctx.alloc().buffer(serverInfo.getBytes("UTF-8").length);
             buffer.writeBytes(serverInfo.getBytes("UTF-8"));
