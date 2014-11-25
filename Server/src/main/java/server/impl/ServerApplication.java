@@ -14,11 +14,13 @@ import lib.ldap.impl.SoCeLDAPClient;
 import lib.module.IModuleManager;
 import lib.network.message.handler.INetworkHandlerManager;
 import lib.network.message.handler.impl.DefaultNetworkHandlerManager;
+import lib.network.message.impl.ServerInfoRequest;
 import lib.queue.impl.SoCePriorityQueue;
 import lib.server.IServer;
 import lib.task.IModuleTask;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import server.handler.ServerInfoHandler;
 import server.handler.SoCeServerHandler;
 
 /**
@@ -60,6 +62,9 @@ public class ServerApplication implements IServer {
     @Override
     public void run() {
         this.defaultNetworkHandlerManager = new DefaultNetworkHandlerManager();
+
+        //register ServerInfoRequest, so the server can handle this message type
+        this.getNetworkHandlerManager().registerHandler(ServerInfoRequest.class.getCanonicalName(), new ServerInfoHandler());
 
         this.getLogger().debug("Start modules.");
 

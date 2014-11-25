@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef56a392-8411-4f59-aaf5-6fa7624a33c2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/src/main/java/server/handler/ServerInfoHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lib/src/main/java/lib/network/message/impl/ServerInfoMessage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/src/main/java/lib/network/message/handler/impl/DefaultNetworkHandler.java" afterPath="$PROJECT_DIR$/Lib/src/main/java/lib/network/message/handler/impl/DefaultNetworkHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lib/src/main/java/lib/network/message/handler/factory/NetworkHandlerFactory.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/src/main/java/lib/network/message/handler/INetworkHandler.java" afterPath="$PROJECT_DIR$/Lib/src/main/java/lib/network/message/handler/INetworkHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server/src/main/java/server/impl/ServerApplication.java" afterPath="$PROJECT_DIR$/Server/src/main/java/server/impl/ServerApplication.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="SoCe.iws" />
@@ -29,16 +28,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Client/src/main/java/client/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="646">
-              <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="SoCeServerHandler.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Server/src/main/java/server/handler/SoCeServerHandler.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -49,11 +38,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="INetworkHandler.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Lib/src/main/java/lib/network/message/handler/INetworkHandler.java">
+      <file leaf-file-name="ServerApplication.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Server/src/main/java/server/impl/ServerApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
-              <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="1309">
+              <caret line="66" column="123" selection-start-line="66" selection-start-column="123" selection-end-line="66" selection-end-column="123" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NetworkHandlerFactory.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Lib/src/main/java/lib/network/message/handler/factory/NetworkHandlerFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
+              <caret line="22" column="49" selection-start-line="22" selection-start-column="49" selection-end-line="22" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -61,11 +60,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DefaultNetworkHandler.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Lib/src/main/java/lib/network/message/handler/impl/DefaultNetworkHandler.java">
+      <file leaf-file-name="INetworkHandler.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Lib/src/main/java/lib/network/message/handler/INetworkHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
-              <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+            <state vertical-scroll-proportion="0.20058997" vertical-offset="0" max-vertical-offset="678">
+              <caret line="8" column="50" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -76,20 +75,8 @@
       <file leaf-file-name="SoCeClient.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Client/src/main/java/client/impl/SoCeClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="410" max-vertical-offset="1088">
-              <caret line="42" column="85" selection-start-line="42" selection-start-column="85" selection-end-line="42" selection-end-column="85" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ServerInfoHandler.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Server/src/main/java/server/handler/ServerInfoHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3259587" vertical-offset="0" max-vertical-offset="678">
-              <caret line="13" column="64" selection-start-line="13" selection-start-column="64" selection-end-line="13" selection-end-column="64" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="257" max-vertical-offset="1088">
+              <caret line="31" column="105" selection-start-line="31" selection-start-column="105" selection-end-line="31" selection-end-column="105" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -122,19 +109,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DefaultNetworkHandlerManager.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Lib/src/main/java/lib/network/message/handler/impl/DefaultNetworkHandlerManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="578">
-              <caret line="23" column="47" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#423#447#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ServerManager.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Server/src/main/java/server/impl/ServerManager.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -158,7 +132,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/Lib/src/main/java/lib/module/administration/IAdministrationModule.java" />
         <option value="$PROJECT_DIR$/Inventory Module/src/main/java/module/client/InventoryClientModule.java" />
         <option value="$PROJECT_DIR$/Inventory Module/src/main/java/module/InventoryModule.java" />
         <option value="$PROJECT_DIR$/Inventory Module/src/main/java/module/server/InventoryServerModule.java" />
@@ -193,7 +166,6 @@
         <option value="$PROJECT_DIR$/Server/src/main/java/server/impl/NettyServer.java" />
         <option value="$PROJECT_DIR$/Server/src/main/java/server/impl/ServerManager.java" />
         <option value="$PROJECT_DIR$/Server/src/main/java/server/handler/SoCeServerHandler.java" />
-        <option value="$PROJECT_DIR$/Client/src/main/java/client/impl/SoCeClient.java" />
         <option value="$PROJECT_DIR$/Client/src/main/java/client/handler/ClientHandler.java" />
         <option value="$PROJECT_DIR$/Lib/src/main/java/lib/network/message/INetworkMessage.java" />
         <option value="$PROJECT_DIR$/Lib/src/main/java/lib/network/message/NetworkMessage.java" />
@@ -203,12 +175,14 @@
         <option value="$PROJECT_DIR$/Lib/src/main/java/lib/network/message/handler/impl/DefaultNetworkHandlerManager.java" />
         <option value="$PROJECT_DIR$/Lib/src/main/java/lib/server/IServer.java" />
         <option value="$PROJECT_DIR$/Lib/src/main/java/lib/client/IClient.java" />
-        <option value="$PROJECT_DIR$/Server/src/main/java/server/impl/ServerApplication.java" />
         <option value="$PROJECT_DIR$/Client/src/main/java/client/impl/ClientApplication.java" />
         <option value="$PROJECT_DIR$/Lib/src/main/java/lib/network/message/impl/ServerInfoMessage.java" />
-        <option value="$PROJECT_DIR$/Lib/src/main/java/lib/network/message/handler/INetworkHandler.java" />
         <option value="$PROJECT_DIR$/Lib/src/main/java/lib/network/message/handler/impl/DefaultNetworkHandler.java" />
         <option value="$PROJECT_DIR$/Server/src/main/java/server/handler/ServerInfoHandler.java" />
+        <option value="$PROJECT_DIR$/Client/src/main/java/client/impl/SoCeClient.java" />
+        <option value="$PROJECT_DIR$/Server/src/main/java/server/impl/ServerApplication.java" />
+        <option value="$PROJECT_DIR$/Lib/src/main/java/lib/network/message/handler/INetworkHandler.java" />
+        <option value="$PROJECT_DIR$/Lib/src/main/java/lib/network/message/handler/factory/NetworkHandlerFactory.java" />
       </list>
     </option>
   </component>
@@ -1025,6 +999,48 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="impl" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SoCe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SoCe" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Lib" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="message" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="handler" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="factory" />
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -2400,7 +2416,11 @@
       <created>1416943286088</created>
       <updated>1416943286088</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="change INetworkHandler.">
+      <created>1416944010799</created>
+      <updated>1416944010799</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2447,7 +2467,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="added interface Comparable to ModuleTask." />
     <MESSAGE value="change comparable interface in IModuleTask." />
     <MESSAGE value="implement compareTo method in class ModuleTask." />
     <MESSAGE value="added interface ISoCeQueue." />
@@ -2472,7 +2491,8 @@
     <MESSAGE value="added DefaultNetworkHandlerManager." />
     <MESSAGE value="change interface IClient and IServer." />
     <MESSAGE value="implement getNetworkHandler () in ClientApplication and ServerApplication." />
-    <option name="LAST_COMMIT_MESSAGE" value="implement getNetworkHandler () in ClientApplication and ServerApplication." />
+    <MESSAGE value="change INetworkHandler." />
+    <option name="LAST_COMMIT_MESSAGE" value="change INetworkHandler." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2484,13 +2504,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Lib/src/main/java/lib/module/administration/IAdministrationModule.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16975749" vertical-offset="0" max-vertical-offset="701">
-          <caret line="7" column="56" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Lib/src/main/java/lib/server/config/ServerConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5014749" vertical-offset="0" max-vertical-offset="678">
@@ -2771,17 +2784,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Lib/src/main/java/lib/network/message/handler/impl/DefaultNetworkHandlerManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="578">
-          <caret line="23" column="47" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#423#447#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Lib/src/main/java/lib/server/IServer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.30088496" vertical-offset="0" max-vertical-offset="678">
@@ -2795,16 +2797,6 @@
         <state vertical-scroll-proportion="0.2758112" vertical-offset="0" max-vertical-offset="678">
           <caret line="15" column="62" selection-start-line="15" selection-start-column="62" selection-end-line="15" selection-end-column="62" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Client/src/main/java/client/handler/ClientHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="189" max-vertical-offset="867">
-          <caret line="31" column="62" selection-start-line="31" selection-start-column="62" selection-end-line="31" selection-end-column="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2850,18 +2842,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Server/src/main/java/server/impl/ServerApplication.java">
+    <entry file="file://$PROJECT_DIR$/Server/src/main/java/server/handler/ServerInfoHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7020649" vertical-offset="0" max-vertical-offset="1258">
-          <caret line="56" column="49" selection-start-line="56" selection-start-column="49" selection-end-line="56" selection-end-column="49" />
-          <folding />
+        <state vertical-scroll-proportion="0.3259587" vertical-offset="0" max-vertical-offset="678">
+          <caret line="13" column="64" selection-start-line="13" selection-start-column="64" selection-end-line="13" selection-end-column="64" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Client/src/main/java/client/impl/SoCeClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="488" max-vertical-offset="1088">
-          <caret line="42" column="85" selection-start-line="42" selection-start-column="85" selection-end-line="42" selection-end-column="85" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="257" max-vertical-offset="1088">
+          <caret line="31" column="105" selection-start-line="31" selection-start-column="105" selection-end-line="31" selection-end-column="105" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/src/main/java/server/impl/ServerApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="1309">
+          <caret line="66" column="123" selection-start-line="66" selection-start-column="123" selection-end-line="66" selection-end-column="123" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lib/src/main/java/lib/network/message/handler/impl/DefaultNetworkHandlerManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.57669616" vertical-offset="0" max-vertical-offset="678">
+          <caret line="23" column="47" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#423#447#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lib/src/main/java/lib/network/message/handler/impl/DefaultNetworkHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2758112" vertical-offset="0" max-vertical-offset="678">
+          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/src/main/java/client/handler/ClientHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="189" max-vertical-offset="867">
+          <caret line="31" column="62" selection-start-line="31" selection-start-column="62" selection-end-line="31" selection-end-column="62" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -2876,10 +2909,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Lib/src/main/java/lib/network/message/handler/impl/DefaultNetworkHandler.java">
+    <entry file="file://$PROJECT_DIR$/Lib/src/main/java/lib/network/message/handler/factory/NetworkHandlerFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
-          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
+          <caret line="22" column="49" selection-start-line="22" selection-start-column="49" selection-end-line="22" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -2888,18 +2921,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Lib/src/main/java/lib/network/message/handler/INetworkHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
-          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Server/src/main/java/server/handler/ServerInfoHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3259587" vertical-offset="0" max-vertical-offset="678">
-          <caret line="13" column="64" selection-start-line="13" selection-start-column="64" selection-end-line="13" selection-end-column="64" />
+        <state vertical-scroll-proportion="0.20058997" vertical-offset="0" max-vertical-offset="678">
+          <caret line="8" column="50" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

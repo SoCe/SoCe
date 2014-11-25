@@ -6,6 +6,6 @@ import lib.network.message.INetworkMessage;
 /**
  * Created by Justin on 25.11.2014.
  */
-public interface INetworkHandler {
+public interface INetworkHandler extends Cloneable {
     public void receive (ChannelHandlerContext ctx, INetworkMessage message);
 }
