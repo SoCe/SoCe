@@ -1,14 +1,15 @@
-package lib.network.message.handler;
+package lib.network.message.handler.impl;
 
 import lib.network.message.INetworkMessage;
-import lib.network.message.handler.impl.DefaultNetworkHandler;
+import lib.network.message.handler.INetworkHandler;
+import lib.network.message.handler.INetworkHandlerManager;
 
 import java.util.HashMap;
 
 /**
  * Created by Justin on 25.11.2014.
  */
-public class NetworkHandlerManager {
+public class DefaultNetworkHandlerManager implements INetworkHandlerManager {
 
     protected HashMap<String,INetworkHandler> handlerHashMap = new HashMap<String,INetworkHandler>();
 
