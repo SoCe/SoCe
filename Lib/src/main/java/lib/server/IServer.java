@@ -3,6 +3,7 @@ package lib.server;
 import lib.ldap.impl.SoCeLDAPClient;
 import lib.module.IModuleManager;
 import lib.network.message.handler.INetworkHandlerManager;
+import lib.network.message.handler.factory.NetworkHandlerFactory;
 import lib.queue.impl.SoCePriorityQueue;
 import lib.task.IModuleTask;
 import org.slf4j.Logger;
@@ -16,4 +17,5 @@ public interface IServer extends Runnable {
     public Logger getLogger ();
     public SoCeLDAPClient getLDAPClient ();
     public INetworkHandlerManager getNetworkHandlerManager ();
+    public NetworkHandlerFactory getNetworkHandlerFactory ();
 }

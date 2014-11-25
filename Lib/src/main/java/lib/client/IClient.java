@@ -2,6 +2,7 @@ package lib.client;
 
 import lib.module.IModuleManager;
 import lib.network.message.handler.INetworkHandlerManager;
+import lib.network.message.handler.factory.NetworkHandlerFactory;
 import lib.queue.impl.SoCePriorityQueue;
 import lib.task.IModuleTask;
 import org.slf4j.Logger;
@@ -14,4 +15,5 @@ public interface IClient extends Runnable {
     public IModuleManager getModuleManager ();
     public Logger getLogger ();
     public INetworkHandlerManager getNetworkHandlerManager ();
+    public NetworkHandlerFactory getNetworkHandlerFactory ();
 }

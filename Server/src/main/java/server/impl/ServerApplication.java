@@ -13,6 +13,7 @@ import lib.cluster.SoCeServer;
 import lib.ldap.impl.SoCeLDAPClient;
 import lib.module.IModuleManager;
 import lib.network.message.handler.INetworkHandlerManager;
+import lib.network.message.handler.factory.NetworkHandlerFactory;
 import lib.network.message.handler.impl.DefaultNetworkHandlerManager;
 import lib.network.message.impl.ServerInfoRequest;
 import lib.queue.impl.SoCePriorityQueue;
@@ -33,6 +34,7 @@ public class ServerApplication implements IServer {
     private Logger logger = LoggerFactory.getLogger(ServerApplication.class);
     protected SoCeServer server = null;
     protected DefaultNetworkHandlerManager defaultNetworkHandlerManager = null;
+    protected NetworkHandlerFactory networkHandlerFactory = null;
 
     @Override
     public SoCePriorityQueue<IModuleTask> getQueue() {
@@ -60,8 +62,14 @@ public class ServerApplication implements IServer {
     }
 
     @Override
+    public NetworkHandlerFactory getNetworkHandlerFactory() {
+        return this.networkHandlerFactory;
+    }
+
+    @Override
     public void run() {
         this.defaultNetworkHandlerManager = new DefaultNetworkHandlerManager();
+        this.networkHandlerFactory = new NetworkHandlerFactory(this.defaultNetworkHandlerManager);
 
         //register ServerInfoRequest, so the server can handle this message type
         this.getNetworkHandlerManager().registerHandler(ServerInfoRequest.class.getCanonicalName(), new ServerInfoHandler());
