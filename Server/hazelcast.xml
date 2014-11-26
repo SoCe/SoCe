@@ -23,16 +23,16 @@
             <address>127.0.0.2</address>
         </cluster-members>
 
-        <smart-routing>true</smart-routing>
+        <!-- <smart-routing>true</smart-routing> -->
         <redo-operation>true</redo-operation>
 
         <socket-interceptor enabled="true">
             <!--socket-interceptor configuration details-->
         </socket-interceptor>
 
-        <aws enabled="true" connection-timeout-seconds="11">
+        <!-- <aws enabled="true" connection-timeout-seconds="11"> -->
             <!--AWS configuration details-->
-        </aws>
+        <!-- </aws> -->
     </network>
 
     <!--local executor pool size-->
