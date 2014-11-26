@@ -1,5 +1,7 @@
 package server.impl;
 
+import com.hazelcast.client.config.ClientConfig;
+import com.hazelcast.client.config.XmlClientConfigBuilder;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelInitializer;
@@ -11,6 +13,7 @@ import io.netty.channel.socket.nio.NioServerSocketChannel;
 import lib.cluster.SoCeCluster;
 import lib.cluster.SoCeServer;
 import lib.ldap.impl.SoCeLDAPClient;
+import lib.logger.LoggerInstance;
 import lib.module.IModuleManager;
 import lib.network.message.handler.INetworkHandlerManager;
 import lib.network.message.handler.factory.NetworkHandlerFactory;
@@ -18,11 +21,15 @@ import lib.network.message.handler.impl.DefaultNetworkHandlerManager;
 import lib.network.message.impl.ServerInfoRequest;
 import lib.queue.impl.SoCePriorityQueue;
 import lib.server.IServer;
+import lib.server.hazelcast.HazelcastManager;
 import lib.task.IModuleTask;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import server.handler.ServerInfoHandler;
 import server.handler.SoCeServerHandler;
+
+import java.io.File;
+import java.io.IOException;
 
 /**
  * Created by Justin on 23.11.2014.
@@ -69,6 +76,21 @@ public class ServerApplication implements IServer {
     @Override
     public void run() {
         //connect to hazelcast cluster
+        ClientConfig clientConfig = null;
+        try {
+            clientConfig = new XmlClientConfigBuilder("./hazelcast.xml").build();
+        } catch (IOException e) {
+            LoggerInstance.getLogger().error("hazelcast io exception in class ServerApplication in method run() while loading hazelcast client configuration file " + e.getLocalizedMessage() + ".");
+            e.printStackTrace();
+        }
+        HazelcastManager.connect(clientConfig);
+
+        //check if the hazelcast client does exists.
+        File f = new File("hazelcast.xml");
+
+        if (!f.exists()) {
+            LoggerInstance.getLogger().error("No hazelcast client configuration file was found.");
+        }
 
         this.defaultNetworkHandlerManager = new DefaultNetworkHandlerManager();
         this.networkHandlerFactory = new NetworkHandlerFactory(this.defaultNetworkHandlerManager);

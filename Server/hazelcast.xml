@@ -5,8 +5,8 @@
 
     <!--Cluster name to connect-->
     <group>
-        <name>Cluster01</name>
-        <password>Cluster01</password>
+        <name>dev</name>
+        <password>dev-pass</password>
     </group>
 
     <!--client properties-->
