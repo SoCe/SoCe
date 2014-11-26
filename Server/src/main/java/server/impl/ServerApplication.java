@@ -68,6 +68,8 @@ public class ServerApplication implements IServer {
 
     @Override
     public void run() {
+        //connect to hazelcast cluster
+
         this.defaultNetworkHandlerManager = new DefaultNetworkHandlerManager();
         this.networkHandlerFactory = new NetworkHandlerFactory(this.defaultNetworkHandlerManager);
 
