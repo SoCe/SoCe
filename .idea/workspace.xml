@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ef56a392-8411-4f59-aaf5-6fa7624a33c2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server/src/main/java/server/handler/SoCeServerHandler.java" afterPath="$PROJECT_DIR$/Server/src/main/java/server/handler/SoCeServerHandler.java" />
+    <list default="true" id="ef56a392-8411-4f59-aaf5-6fa7624a33c2" name="Default" comment="change SoCeServerhandler.">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/hazelcast.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/src/main/java/client/Main.java" afterPath="$PROJECT_DIR$/Client/src/main/java/client/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="SoCe.iws" />
@@ -26,15 +27,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ServerApplication.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Client/src/main/java/client/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.47569954" vertical-offset="0" max-vertical-offset="680">
+              <caret line="25" column="74" selection-start-line="25" selection-start-column="74" selection-end-line="25" selection-end-column="74" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ServerApplication.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Server/src/main/java/server/impl/ServerApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.53243846" vertical-offset="425" max-vertical-offset="1428">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1207" max-vertical-offset="1972">
               <caret line="71" column="98" selection-start-line="71" selection-start-column="98" selection-end-line="71" selection-end-column="98" />
-              <folding>
-                <element signature="e#2025#2026#0" expanded="true" />
-                <element signature="e#2074#2075#0" expanded="true" />
-              </folding>
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SoCeServerHandler.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Server/src/main/java/server/handler/SoCeServerHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="595" max-vertical-offset="1360">
+              <caret line="35" column="97" selection-start-line="35" selection-start-column="97" selection-end-line="35" selection-end-column="97" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -42,13 +60,9 @@
       <file leaf-file-name="DefaultNetworkHandler.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Lib/src/main/java/lib/network/message/handler/impl/DefaultNetworkHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442">
+            <state vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="442">
               <caret line="17" column="47" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#488#489#0" expanded="true" />
-                <element signature="e#542#543#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -56,11 +70,9 @@
       <file leaf-file-name="INetworkHandler.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Lib/src/main/java/lib/network/message/handler/INetworkHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
+            <state vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="306">
               <caret line="10" column="69" selection-start-line="10" selection-start-column="69" selection-end-line="10" selection-end-column="69" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -70,9 +82,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="257" max-vertical-offset="1088">
               <caret line="31" column="105" selection-start-line="31" selection-start-column="105" selection-end-line="31" selection-end-column="105" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -80,26 +90,9 @@
       <file leaf-file-name="ClientApplication.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Client/src/main/java/client/impl/ClientApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="1173">
+            <state vertical-scroll-proportion="0.0" vertical-offset="901" max-vertical-offset="1445">
               <caret line="53" column="98" selection-start-line="53" selection-start-column="98" selection-end-line="53" selection-end-column="98" />
-              <folding>
-                <element signature="e#1242#1243#0" expanded="true" />
-                <element signature="e#1269#1270#0" expanded="true" />
-                <element signature="e#1346#1347#0" expanded="true" />
-                <element signature="e#1395#1396#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ClientHandler.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Client/src/main/java/client/handler/ClientHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="189" max-vertical-offset="867">
-              <caret line="31" column="62" selection-start-line="31" selection-start-column="62" selection-end-line="31" selection-end-column="62" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -107,7 +100,7 @@
       <file leaf-file-name="ServerManager.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Server/src/main/java/server/impl/ServerManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="1003">
+            <state vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="1224">
               <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
               <folding />
             </state>
@@ -117,7 +110,7 @@
       <file leaf-file-name="ServerMain.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Server/src/main/java/server/ServerMain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
+            <state vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="527">
               <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
               <folding />
             </state>
@@ -148,7 +141,6 @@
         <option value="$PROJECT_DIR$/Lib/src/main/java/lib/server/hazelcast/HazelcastManager.java" />
         <option value="$PROJECT_DIR$/Inventory Module/pom.xml" />
         <option value="$PROJECT_DIR$/Client/pom.xml" />
-        <option value="$PROJECT_DIR$/Client/src/main/java/client/Main.java" />
         <option value="$PROJECT_DIR$/Lib/src/main/java/lib/cluster/SoCeCluster.java" />
         <option value="$PROJECT_DIR$/Lib/src/main/java/lib/cluster/SoCeServer.java" />
         <option value="$PROJECT_DIR$/Lib/src/main/java/lib/cluster/SoCeServerStateUpdateListener.java" />
@@ -188,6 +180,7 @@
         <option value="$PROJECT_DIR$/Server/src/main/java/server/impl/ServerApplication.java" />
         <option value="$PROJECT_DIR$/Client/src/main/java/client/impl/ClientApplication.java" />
         <option value="$PROJECT_DIR$/Server/src/main/java/server/handler/SoCeServerHandler.java" />
+        <option value="$PROJECT_DIR$/Client/src/main/java/client/Main.java" />
       </list>
     </option>
   </component>
@@ -229,8 +222,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -1875,6 +1866,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -2441,7 +2434,15 @@
       <created>1416945532502</created>
       <updated>1416945532502</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="change SoCeServerHandler.">
+      <created>1416946080694</created>
+      <updated>1416946080694</updated>
+    </task>
+    <task id="LOCAL-00060" summary="change SoCeServerhandler.">
+      <created>1416946182376</created>
+      <updated>1416946182376</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2458,17 +2459,17 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32647464" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" x="74" y="310" width="1336" height="239" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25748503" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31687242" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31687242" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32921812" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32647464" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" x="74" y="310" width="1336" height="239" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -2488,8 +2489,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="added interface IAdministrationModule." />
-    <MESSAGE value="added class InventoryClientModule and InventoryServerModule to Inventory Module." />
     <MESSAGE value="implement SoCeQueue." />
     <MESSAGE value="update dependencies." />
     <MESSAGE value="added class SoCeCluster and SoCeServer." />
@@ -2513,7 +2512,9 @@
     <MESSAGE value="implement method clone () in class DefaultNetworkHandler." />
     <MESSAGE value="implement getNetworkHandlerFactory in class ServerApplication." />
     <MESSAGE value="implement method getNetworkHandlerFactory ()." />
-    <option name="LAST_COMMIT_MESSAGE" value="implement method getNetworkHandlerFactory ()." />
+    <MESSAGE value="change SoCeServerHandler." />
+    <MESSAGE value="change SoCeServerhandler." />
+    <option name="LAST_COMMIT_MESSAGE" value="change SoCeServerhandler." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2525,13 +2526,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Lib/src/main/java/lib/config/SoCeConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.69022554" vertical-offset="0" max-vertical-offset="799">
-          <caret line="28" column="18" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Lib/src/main/java/lib/logger/LoggerInstance.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.34304932" vertical-offset="0" max-vertical-offset="446">
@@ -2666,7 +2660,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
           <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2695,7 +2688,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="601" max-vertical-offset="1173">
           <caret line="60" column="10" selection-start-line="60" selection-start-column="10" selection-end-line="60" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2703,7 +2695,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
           <caret line="5" column="38" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2711,7 +2702,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
           <caret line="5" column="54" selection-start-line="5" selection-start-column="54" selection-end-line="5" selection-end-column="54" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2719,7 +2709,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="782">
           <caret line="24" column="69" selection-start-line="24" selection-start-column="69" selection-end-line="24" selection-end-column="69" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2747,19 +2736,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Client/src/main/java/client/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="646">
-          <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Lib/src/main/java/lib/network/message/INetworkMessage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.22818792" vertical-offset="0" max-vertical-offset="447">
           <caret line="6" column="37" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2767,10 +2747,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.20058997" vertical-offset="0" max-vertical-offset="678">
           <caret line="8" column="50" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
-          <folding>
-            <element signature="e#181#182#0" expanded="true" />
-            <element signature="e#238#239#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2778,7 +2754,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.17551622" vertical-offset="0" max-vertical-offset="678">
           <caret line="7" column="55" selection-start-line="7" selection-start-column="55" selection-end-line="7" selection-end-column="55" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2786,7 +2761,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.22566372" vertical-offset="0" max-vertical-offset="678">
           <caret line="9" column="64" selection-start-line="9" selection-start-column="64" selection-end-line="9" selection-end-column="64" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2802,22 +2776,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.35103244" vertical-offset="0" max-vertical-offset="799">
           <caret line="14" column="64" selection-start-line="14" selection-start-column="64" selection-end-line="14" selection-end-column="64" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#360#368#0" expanded="true" />
-            <element signature="e#405#406#0" expanded="true" />
-            <element signature="e#439#440#0" expanded="true" />
-            <element signature="e#490#491#0" expanded="true" />
-            <element signature="e#536#537#0" expanded="true" />
-            <element signature="e#579#580#0" expanded="true" />
-            <element signature="e#612#613#0" expanded="true" />
-            <element signature="e#670#671#0" expanded="true" />
-            <element signature="e#714#715#0" expanded="true" />
-            <element signature="e#748#749#0" expanded="true" />
-            <element signature="e#778#779#0" expanded="true" />
-            <element signature="e#824#825#0" expanded="true" />
-            <element signature="e#862#863#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2825,9 +2783,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="257" max-vertical-offset="1088">
           <caret line="31" column="105" selection-start-line="31" selection-start-column="105" selection-end-line="31" selection-end-column="105" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2835,20 +2791,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.57669616" vertical-offset="0" max-vertical-offset="678">
           <caret line="23" column="47" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#423#447#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Client/src/main/java/client/handler/ClientHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="189" max-vertical-offset="867">
-          <caret line="31" column="62" selection-start-line="31" selection-start-column="62" selection-end-line="31" selection-end-column="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2856,11 +2798,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442">
           <caret line="17" column="47" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#488#489#0" expanded="true" />
-            <element signature="e#542#543#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2868,9 +2806,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2758112" vertical-offset="0" max-vertical-offset="678">
           <caret line="11" column="60" selection-start-line="11" selection-start-column="60" selection-end-line="11" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2878,9 +2813,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
           <caret line="10" column="69" selection-start-line="10" selection-start-column="69" selection-end-line="10" selection-end-column="69" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2888,9 +2821,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.67699116" vertical-offset="0" max-vertical-offset="678">
           <caret line="27" column="47" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2898,7 +2828,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.30088496" vertical-offset="0" max-vertical-offset="678">
           <caret line="17" column="61" selection-start-line="17" selection-start-column="61" selection-end-line="17" selection-end-column="61" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2906,7 +2835,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3259587" vertical-offset="0" max-vertical-offset="678">
           <caret line="19" column="61" selection-start-line="19" selection-start-column="61" selection-end-line="19" selection-end-column="61" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2914,20 +2842,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.79941005" vertical-offset="206" max-vertical-offset="884">
           <caret line="67" column="25" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/src/main/java/server/impl/ServerApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="1428">
+          <caret line="71" column="98" selection-start-line="71" selection-start-column="98" selection-end-line="71" selection-end-column="98" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Client/src/main/java/client/impl/ClientApplication.java">
+    <entry file="file://$PROJECT_DIR$/Server/src/main/java/server/handler/SoCeServerHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="1173">
-          <caret line="53" column="98" selection-start-line="53" selection-start-column="98" selection-end-line="53" selection-end-column="98" />
-          <folding>
-            <element signature="e#1242#1243#0" expanded="true" />
-            <element signature="e#1269#1270#0" expanded="true" />
-            <element signature="e#1346#1347#0" expanded="true" />
-            <element signature="e#1395#1396#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="155" max-vertical-offset="1207">
+          <caret line="35" column="97" selection-start-line="35" selection-start-column="97" selection-end-line="35" selection-end-column="97" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2939,22 +2869,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Server/src/main/java/server/handler/SoCeServerHandler.java">
+    <entry file="file://$PROJECT_DIR$/Client/src/main/java/client/handler/ClientHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3378076" vertical-offset="257" max-vertical-offset="1173">
-          <caret line="33" column="78" selection-start-line="33" selection-start-column="78" selection-end-line="33" selection-end-column="78" />
+        <state vertical-scroll-proportion="0.5994109" vertical-offset="52" max-vertical-offset="799">
+          <caret line="31" column="62" selection-start-line="31" selection-start-column="62" selection-end-line="31" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/src/main/java/client/impl/ClientApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1105">
+          <caret line="53" column="98" selection-start-line="53" selection-start-column="98" selection-end-line="53" selection-end-column="98" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Server/src/main/java/server/impl/ServerApplication.java">
+    <entry file="file://$PROJECT_DIR$/Server/hazelcast.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.53243846" vertical-offset="425" max-vertical-offset="1428">
-          <caret line="71" column="98" selection-start-line="71" selection-start-column="98" selection-end-line="71" selection-end-column="98" />
-          <folding>
-            <element signature="e#2025#2026#0" expanded="true" />
-            <element signature="e#2074#2075#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1207">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/src/main/java/client/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.47569954" vertical-offset="0" max-vertical-offset="680">
+          <caret line="25" column="74" selection-start-line="25" selection-start-column="74" selection-end-line="25" selection-end-column="74" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -23,6 +23,8 @@ public class Main {
         Thread thread = new Thread(clientApplication);
         thread.start();
 
+        //https://developers.google.com/protocol-buffers/docs/javatutorial
+
         //http://www.oracle.com/technetwork/server-storage/ts-4883-1-159000.pdf
 
         //http://www.torsten-horn.de/techdocs/maven.htm
