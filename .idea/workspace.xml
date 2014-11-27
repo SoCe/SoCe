@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ef56a392-8411-4f59-aaf5-6fa7624a33c2" name="Default" comment="added SoCeClusterManager.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SoftwareCenter/src/main/java/administration/AdministrationMain.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/src/main/java/client/Main.java" afterPath="$PROJECT_DIR$/Client/src/main/java/client/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/src/main/java/lib/cluster/SoCeClusterManager.java" afterPath="$PROJECT_DIR$/Lib/src/main/java/lib/cluster/SoCeClusterManager.java" />
+    <list default="true" id="ef56a392-8411-4f59-aaf5-6fa7624a33c2" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SoftwareCenter/SoftwareCenter.iml" afterPath="$PROJECT_DIR$/SoftwareCenter/SoftwareCenter.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SoftwareCenter/pom.xml" afterPath="$PROJECT_DIR$/SoftwareCenter/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="SoCe.iws" />
@@ -48,11 +47,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SoCeClusterManager.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="SoCeClusterManager.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Lib/src/main/java/lib/cluster/SoCeClusterManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.57669616" vertical-offset="0" max-vertical-offset="680">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="680">
               <caret line="30" column="31" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdministrationMain.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/SoftwareCenter/src/main/java/administration/AdministrationMain.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.25073746" vertical-offset="0" max-vertical-offset="678">
+              <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -83,16 +92,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="306">
               <caret line="10" column="69" selection-start-line="10" selection-start-column="69" selection-end-line="10" selection-end-column="69" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SoCeClient.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Client/src/main/java/client/impl/SoCeClient.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="257" max-vertical-offset="1088">
-              <caret line="31" column="105" selection-start-line="31" selection-start-column="105" selection-end-line="31" selection-end-column="105" />
               <folding />
             </state>
           </provider>
@@ -131,7 +130,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/Lib/src/main/java/lib/queue/impl/SoCePriorityQueue.java" />
         <option value="$PROJECT_DIR$/Client/src/main/java/client/impl/DefaultClient.java" />
         <option value="$PROJECT_DIR$/Lib/src/main/java/lib/server/config/ServerConfig.java" />
         <option value="$PROJECT_DIR$/Lib/src/main/java/lib/config/SoCeConfig.java" />
@@ -182,6 +180,7 @@
         <option value="$PROJECT_DIR$/Client/src/main/java/client/Main.java" />
         <option value="$PROJECT_DIR$/Lib/src/main/java/lib/cluster/SoCeClusterManager.java" />
         <option value="$PROJECT_DIR$/SoftwareCenter/src/main/java/administration/AdministrationMain.java" />
+        <option value="$PROJECT_DIR$/SoftwareCenter/pom.xml" />
       </list>
     </option>
   </component>
@@ -2529,7 +2528,11 @@
       <created>1417108349526</created>
       <updated>1417108349526</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="added AdministrationMain.">
+      <created>1417117682329</created>
+      <updated>1417117682329</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2546,6 +2549,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32784638" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32647464" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" x="74" y="310" width="1336" height="239" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -2556,7 +2560,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32921812" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32647464" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" x="74" y="310" width="1336" height="239" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -2576,7 +2579,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="added interface INoSQLDatabase." />
     <MESSAGE value="added LDAPTree." />
     <MESSAGE value="added netty dependency." />
     <MESSAGE value="added netty server handler." />
@@ -2601,7 +2603,8 @@
     <MESSAGE value="change hazelcast configuration." />
     <MESSAGE value="change hazelcast client configuration." />
     <MESSAGE value="added SoCeClusterManager." />
-    <option name="LAST_COMMIT_MESSAGE" value="added SoCeClusterManager." />
+    <MESSAGE value="added AdministrationMain." />
+    <option name="LAST_COMMIT_MESSAGE" value="added AdministrationMain." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2613,13 +2616,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Lib/src/main/java/lib/queue/impl/SoCePriorityQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5425532" vertical-offset="34" max-vertical-offset="1054">
-          <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Lib/src/main/java/lib/queue/impl/SoCeQueue.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.1659575" vertical-offset="251" max-vertical-offset="935">
@@ -2972,18 +2968,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SoftwareCenter/src/main/java/administration/AdministrationMain.java">
+    <entry file="file://$PROJECT_DIR$/Lib/src/main/java/lib/cluster/SoCeClusterManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25073746" vertical-offset="0" max-vertical-offset="678">
-          <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="680">
+          <caret line="30" column="31" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Lib/src/main/java/lib/cluster/SoCeClusterManager.java">
+    <entry file="file://$PROJECT_DIR$/SoftwareCenter/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.57669616" vertical-offset="0" max-vertical-offset="680">
-          <caret line="30" column="31" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
+        <state vertical-scroll-proportion="1.0029498" vertical-offset="0" max-vertical-offset="850">
+          <caret line="40" column="21" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SoftwareCenter/src/main/java/administration/AdministrationMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.25073746" vertical-offset="0" max-vertical-offset="678">
+          <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
           <folding />
         </state>
       </provider>
