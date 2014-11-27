@@ -1,9 +1,13 @@
 package lib.cluster;
 
+import lib.server.hazelcast.HazelcastManager;
+
+import java.util.concurrent.ConcurrentMap;
+
 /**
  * Created by Justin on 27.11.2014.
  */
-public class SoCeClusterManager {
+public class SoCeClusterManager implements Runnable {
 
     protected SoCeCluster cluster = null;
 
@@ -15,4 +19,17 @@ public class SoCeClusterManager {
         this.cluster = cluster;
     }
 
+    public void addServer (SoCeServer server) {
+        this.cluster.addServer(server);
+
+        //add server connections
+        ConcurrentMap<String,SoCeServer> connections = HazelcastManager.getClient().getMap("server-connections");
+        connections.put(server.getHost() + ":" + server.getPort() + "", server);
+    }
+
+    @Override
+    public void run() {
+        ConcurrentMap<String,SoCeServer> connections = HazelcastManager.getClient().getMap("server-connections");
+        connections.put("127.0.0.1", cluster.getServerList().get(0));
+    }
 }

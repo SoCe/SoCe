@@ -11,6 +11,7 @@ import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
 import lib.cluster.SoCeCluster;
+import lib.cluster.SoCeClusterManager;
 import lib.cluster.SoCeServer;
 import lib.ldap.impl.SoCeLDAPClient;
 import lib.logger.LoggerInstance;
@@ -114,6 +115,10 @@ public class ServerApplication implements IServer {
         this.server = server;
 
         cluster.addServer(server);
+
+        SoCeClusterManager clusterManager = new SoCeClusterManager(cluster);
+        Thread clusterManagerThread = new Thread(clusterManager);
+        clusterManagerThread.start();
 
         //load modules
         this.moduleManager = new ServerModuleManagerImpl(this, ServerApplication.buildNumber);
