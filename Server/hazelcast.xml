@@ -1,19 +1,19 @@
 <hazelcast-client xsi:schemaLocation=
-    "http://www.hazelcast.com/schema/client-config hazelcast-client-config-3.3.xsd"
+    "http://www.hazelcast.com/schema/client-config/hazelcast-client-config-3.3.xsd"
                   xmlns="http://www.hazelcast.com/schema/client-config"
                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
     <!--Cluster name to connect-->
-    <group>
+    <!-- <group>
         <name>dev</name>
         <password>dev-pass</password>
-    </group>
+    </group> -->
 
     <!--client properties-->
-    <properties>
+    <!-- <properties>
         <property name="hazelcast.client.connection.timeout">10000</property>
         <property name="hazelcast.client.retry.count">6</property>
-    </properties>
+    </properties> -->
 
     <!--Network configuration details-->
     <network>
@@ -26,9 +26,9 @@
         <!-- <smart-routing>true</smart-routing> -->
         <redo-operation>true</redo-operation>
 
-        <socket-interceptor enabled="true">
+        <!-- <socket-interceptor enabled="true"> -->
             <!--socket-interceptor configuration details-->
-        </socket-interceptor>
+        <!-- </socket-interceptor> -->
 
         <!-- <aws enabled="true" connection-timeout-seconds="11"> -->
             <!--AWS configuration details-->
@@ -39,9 +39,9 @@
     <executor-pool-size>40</executor-pool-size>
 
     <!--security credentials configuration-->
-    <security>
+    <!-- <security>
         <credentials>com.hazelcast.security.UsernamePasswordCredentials</credentials>
-    </security>
+    </security> -->
 
     <listeners>
         <!--listeners-->
