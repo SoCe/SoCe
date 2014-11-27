@@ -23,6 +23,8 @@ public class Main {
         Thread thread = new Thread(clientApplication);
         thread.start();
 
+        //http://www.znetdevelopment.com/blogs/2009/04/21/netty-using-handlers/
+
         //https://developers.google.com/protocol-buffers/docs/javatutorial
 
         //http://www.oracle.com/technetwork/server-storage/ts-4883-1-159000.pdf
