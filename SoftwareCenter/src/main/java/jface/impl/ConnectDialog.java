@@ -17,6 +17,8 @@ public class ConnectDialog extends TitleAreaDialog {
 
     private String host;
     private String port;
+    private String user = "";
+    private String pass = "";
 
     public ConnectDialog (Shell parent) {
         super(parent);
@@ -38,13 +40,15 @@ public class ConnectDialog extends TitleAreaDialog {
         container.setLayoutData(new GridData(SWT.FILL, SWT.FILL, true, true));
         container.setLayout(layout);
 
-        createFirstName(container);
-        createLastName(container);
+        createHostText(container);
+        createPortText(container);
+        createUserText(container);
+        createPassText(container);
 
         return area;
     }
 
-    private void createFirstName(Composite container) {
+    private void createHostText(Composite container) {
         Label lbtFirstName = new Label(container, SWT.NONE);
         lbtFirstName.setText("Host: ");
 
@@ -56,7 +60,7 @@ public class ConnectDialog extends TitleAreaDialog {
         txthostName.setLayoutData(dataFirstName);
     }
 
-    private void createLastName(Composite container) {
+    private void createPortText(Composite container) {
         Label lbtLastName = new Label(container, SWT.NONE);
         lbtLastName.setText("Port: ");
 
@@ -65,6 +69,30 @@ public class ConnectDialog extends TitleAreaDialog {
         dataLastName.horizontalAlignment = GridData.FILL;
         portText = new Text(container, SWT.BORDER);
         portText.setText("50999");
+        portText.setLayoutData(dataLastName);
+    }
+
+    private void createUserText(Composite container) {
+        Label lbtLastName = new Label(container, SWT.NONE);
+        lbtLastName.setText("User: ");
+
+        GridData dataLastName = new GridData();
+        dataLastName.grabExcessHorizontalSpace = true;
+        dataLastName.horizontalAlignment = GridData.FILL;
+        portText = new Text(container, SWT.BORDER);
+        portText.setText("administrator");
+        portText.setLayoutData(dataLastName);
+    }
+
+    private void createPassText(Composite container) {
+        Label lbtLastName = new Label(container, SWT.NONE);
+        lbtLastName.setText("Password: ");
+
+        GridData dataLastName = new GridData();
+        dataLastName.grabExcessHorizontalSpace = true;
+        dataLastName.horizontalAlignment = GridData.FILL;
+        portText = new Text(container, SWT.BORDER);
+        portText.setText("");
         portText.setLayoutData(dataLastName);
     }
 
