@@ -2,6 +2,7 @@ package administration;
 
 import jface.impl.ConnectDialog;
 import org.eclipse.jface.window.Window;
+import org.eclipse.swt.layout.FillLayout;
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Shell;
 import swt.ConnectWindow;
@@ -25,7 +26,7 @@ public class AdministrationMain {
         shell.forceActive();
         shell.setLocation(600, 600);
 
-        shell.setLayout(null);
+        shell.setLayout(new FillLayout());
 
         //http://www.vogella.com/tutorials/EclipseDialogs/article.html
 
