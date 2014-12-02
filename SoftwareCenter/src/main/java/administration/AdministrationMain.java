@@ -21,65 +21,10 @@ public class AdministrationMain {
 
         //JavaFX for web applications
 
-        Display display = new Display();
-        Shell shell = new Shell(display);
-
-        shell.setText("Application");
-        shell.setSize(600, 800);
-        shell.setActive();
-        shell.forceActive();
-        shell.setLocation(600, 600);
-
-        shell.setLayout(new FillLayout());
-
-        //set the window location to center.
-        center(shell);
-
-        //http://www.vogella.com/tutorials/EclipseDialogs/article.html
-
-        ConnectDialog dialog = new ConnectDialog(shell);
-        dialog.create();
-        if (dialog.open() == Window.OK) {
-            System.out.println(dialog.getHost());
-            System.out.println(dialog.getPort());
-        }
-
-        shell.setText("SoftwareCenter Management Tools");
-
-        //create SoCeMenuManager for modules
-        SoCeMenuManager menuManager = new SoCeMenuManager(shell);
-
-        //create main application window
-        AdministrationWindow administrationWindow = new AdministrationWindow(shell, menuManager);
-
-        //main event loop
-        while (!shell.isDisposed()) {
-            if (!display.readAndDispatch()) {
-                display.sleep();
-            }
-        }
-
-        /*ConnectWindow connectWindow = new ConnectWindow(shell);
-
-        while (!shell.isDisposed()) {
-            if (!display.readAndDispatch()) {
-                display.sleep();
-            }
-        }*/
-
-        display.dispose();
-    }
-
-    public static void center(Shell shell) {
-
-        Rectangle bds = shell.getDisplay().getBounds();
-
-        Point p = shell.getSize();
-
-        int nLeft = (bds.width - p.x) / 2;
-        int nTop = (bds.height - p.y) / 2;
-
-        shell.setBounds(nLeft, nTop, p.x, p.y);
+        //start swt in new thread
+        AdministrationApplication administrationApplication = new AdministrationApplication();
+        Thread thread = new Thread(administrationApplication);
+        thread.start();
     }
 
 }
