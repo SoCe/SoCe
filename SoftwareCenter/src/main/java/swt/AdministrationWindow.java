@@ -1,5 +1,6 @@
 package swt;
 
+import administration.impl.SoCeMenuManager;
 import org.eclipse.jface.window.ApplicationWindow;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.widgets.*;
@@ -9,10 +10,16 @@ import org.eclipse.swt.widgets.*;
  */
 public class AdministrationWindow extends ApplicationWindow {
 
-    public AdministrationWindow (Shell shell) {
+    public AdministrationWindow (Shell shell, SoCeMenuManager menuManager) {
         super(shell);
 
         this.setStatus("Open");
+
+        //create menu
+        this.createMenu(menuManager);
+
+        //set menu
+        menuManager.setMenu("main");
 
         // Don't return from open() until window closes
         setBlockOnOpen(true);
@@ -32,6 +39,10 @@ public class AdministrationWindow extends ApplicationWindow {
         composite.forceFocus();
 
         return composite;
+    }
+
+    public void createMenu (SoCeMenuManager menuManager) {
+        //
     }
 
 }

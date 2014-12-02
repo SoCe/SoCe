@@ -50,7 +50,7 @@ public class AdministrationMain {
         SoCeMenuManager menuManager = new SoCeMenuManager(shell);
 
         //create main application window
-        AdministrationWindow administrationWindow = new AdministrationWindow(shell);
+        AdministrationWindow administrationWindow = new AdministrationWindow(shell, menuManager);
 
         //main event loop
         while (!shell.isDisposed()) {
