@@ -1,6 +1,7 @@
 package administration.impl;
 
         import lib.administration.ISoCeMenuManager;
+        import lib.logger.LoggerInstance;
         import org.eclipse.swt.SWT;
         import org.eclipse.swt.widgets.Menu;
         import org.eclipse.swt.widgets.Shell;
@@ -22,4 +23,17 @@ public class SoCeMenuManager implements ISoCeMenuManager {
         this.menuHashMap.put("main", mainMenu);
     }
 
+    @Override
+    public void setMenu(String menuName) {
+        if (this.menuHashMap.containsKey(menuName)) {
+            this.shell.setMenuBar(this.menuHashMap.get(menuName));
+        } else {
+            LoggerInstance.getLogger().error("SoCeMenuManager: menu " + menuName + " does not exists.");
+        }
+    }
+
+    @Override
+    public void putMenu(String menuName, Menu menu) {
+        this.menuHashMap.put(menuName, menu);
+    }
 }

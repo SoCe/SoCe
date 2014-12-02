@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef56a392-8411-4f59-aaf5-6fa7624a33c2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/Client.iml" afterPath="$PROJECT_DIR$/Client/Client.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/src/main/java/lib/administration/ISoCeMenuManager.java" afterPath="$PROJECT_DIR$/Lib/src/main/java/lib/administration/ISoCeMenuManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Inventory Module/Inventory Module.iml" afterPath="$PROJECT_DIR$/Inventory Module/Inventory Module.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/Lib.iml" afterPath="$PROJECT_DIR$/Lib/Lib.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server/Server.iml" afterPath="$PROJECT_DIR$/Server/Server.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SoftwareCenter/src/main/java/administration/impl/SoCeMenuManager.java" afterPath="$PROJECT_DIR$/SoftwareCenter/src/main/java/administration/impl/SoCeMenuManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SoftwareCenter/SoftwareCenter.iml" afterPath="$PROJECT_DIR$/SoftwareCenter/SoftwareCenter.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/pom.xml" afterPath="$PROJECT_DIR$/Lib/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="SoCe.iws" />
@@ -83,23 +76,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SoCeMenuManager.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="SoCeMenuManager.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SoftwareCenter/src/main/java/administration/impl/SoCeMenuManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="79" max-vertical-offset="527">
-              <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.65848213" vertical-offset="317" max-vertical-offset="765">
+              <caret line="36" column="45" selection-start-line="36" selection-start-column="45" selection-end-line="36" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#409#422#0" expanded="true" />
+                <element signature="e#451#464#0" expanded="true" />
+                <element signature="e#1063#1064#0" expanded="true" />
+                <element signature="e#1115#1116#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ISoCeMenuManager.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ISoCeMenuManager.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Lib/src/main/java/lib/administration/ISoCeMenuManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.34151787" vertical-offset="0" max-vertical-offset="448">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
               <caret line="9" column="53" selection-start-line="9" selection-start-column="53" selection-end-line="9" selection-end-column="53" />
               <folding />
             </state>
@@ -189,9 +184,9 @@
         <option value="$PROJECT_DIR$/Lib/src/main/java/lib/administration/IMenuManager.java" />
         <option value="$PROJECT_DIR$/SoftwareCenter/src/main/java/administration/impl/MenuManager.java" />
         <option value="$PROJECT_DIR$/SoftwareCenter/pom.xml" />
-        <option value="$PROJECT_DIR$/SoftwareCenter/src/main/java/administration/impl/SoCeMenuManager.java" />
         <option value="$PROJECT_DIR$/Lib/pom.xml" />
         <option value="$PROJECT_DIR$/Lib/src/main/java/lib/administration/ISoCeMenuManager.java" />
+        <option value="$PROJECT_DIR$/SoftwareCenter/src/main/java/administration/impl/SoCeMenuManager.java" />
       </list>
     </option>
   </component>
@@ -2705,7 +2700,11 @@
       <created>1417547886358</created>
       <updated>1417547886358</updated>
     </task>
-    <option name="localTasksCounter" value="79" />
+    <task id="LOCAL-00079" summary="change pom.xml dependencies.">
+      <created>1417548340838</created>
+      <updated>1417548340838</updated>
+    </task>
+    <option name="localTasksCounter" value="80" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2753,7 +2752,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="change INetworkHandler." />
     <MESSAGE value="change interface INetworkHandler." />
     <MESSAGE value="implement method clone () in class DefaultNetworkHandler." />
     <MESSAGE value="implement getNetworkHandlerFactory in class ServerApplication." />
@@ -2778,7 +2776,8 @@
     <MESSAGE value="change administration tool." />
     <MESSAGE value="added interface IMenuManager." />
     <MESSAGE value="added ISoCeMenuManager." />
-    <option name="LAST_COMMIT_MESSAGE" value="added ISoCeMenuManager." />
+    <MESSAGE value="change pom.xml dependencies." />
+    <option name="LAST_COMMIT_MESSAGE" value="change pom.xml dependencies." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -3122,17 +3121,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SoftwareCenter/src/main/java/administration/impl/SoCeMenuManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="79" max-vertical-offset="527">
-          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#409#422#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SoftwareCenter/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.62053573" vertical-offset="504" max-vertical-offset="952">
@@ -3167,9 +3155,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Lib/src/main/java/lib/administration/ISoCeMenuManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34151787" vertical-offset="0" max-vertical-offset="448">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
           <caret line="9" column="53" selection-start-line="9" selection-start-column="53" selection-end-line="9" selection-end-column="53" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SoftwareCenter/src/main/java/administration/impl/SoCeMenuManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.65848213" vertical-offset="317" max-vertical-offset="765">
+          <caret line="36" column="45" selection-start-line="36" selection-start-column="45" selection-end-line="36" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#451#464#0" expanded="true" />
+            <element signature="e#1063#1064#0" expanded="true" />
+            <element signature="e#1115#1116#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
