@@ -2,11 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef56a392-8411-4f59-aaf5-6fa7624a33c2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SoftwareCenter/src/main/java/administration/impl/SoCeMenuManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/Client.iml" afterPath="$PROJECT_DIR$/Client/Client.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/src/main/java/lib/administration/ISoCeMenuManager.java" afterPath="$PROJECT_DIR$/Lib/src/main/java/lib/administration/ISoCeMenuManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Inventory Module/Inventory Module.iml" afterPath="$PROJECT_DIR$/Inventory Module/Inventory Module.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/Lib.iml" afterPath="$PROJECT_DIR$/Lib/Lib.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server/Server.iml" afterPath="$PROJECT_DIR$/Server/Server.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SoftwareCenter/src/main/java/administration/impl/SoCeMenuManager.java" afterPath="$PROJECT_DIR$/SoftwareCenter/src/main/java/administration/impl/SoCeMenuManager.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SoftwareCenter/SoftwareCenter.iml" afterPath="$PROJECT_DIR$/SoftwareCenter/SoftwareCenter.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SoftwareCenter/pom.xml" afterPath="$PROJECT_DIR$/SoftwareCenter/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/pom.xml" afterPath="$PROJECT_DIR$/Lib/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="D:\Program Files\jmonkeyplatform\projects\Repo\Intellij\SoCe\Lib\src\main\java\lib\administration\IMenuManager.java" afterPath="$PROJECT_DIR$/Lib/src/main/java/lib/administration/ISoCeMenuManager.java" />
     </list>
     <ignored path="SoCe.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,16 +38,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="714">
               <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ServerApplication.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Server/src/main/java/server/impl/ServerApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2040" max-vertical-offset="2465">
-              <caret line="120" column="37" selection-start-line="120" selection-start-column="37" selection-end-line="120" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -89,11 +83,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SoCeMenuManager.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="SoCeMenuManager.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SoftwareCenter/src/main/java/administration/impl/SoCeMenuManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.265625" vertical-offset="0" max-vertical-offset="448">
-              <caret line="7" column="58" selection-start-line="7" selection-start-column="58" selection-end-line="7" selection-end-column="58" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="79" max-vertical-offset="527">
+              <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#409#422#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ISoCeMenuManager.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Lib/src/main/java/lib/administration/ISoCeMenuManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.34151787" vertical-offset="0" max-vertical-offset="448">
+              <caret line="9" column="53" selection-start-line="9" selection-start-column="53" selection-end-line="9" selection-end-column="53" />
               <folding />
             </state>
           </provider>
@@ -169,7 +176,6 @@
         <option value="$PROJECT_DIR$/Client/src/main/java/client/impl/ClientApplication.java" />
         <option value="$PROJECT_DIR$/Server/src/main/java/server/handler/SoCeServerHandler.java" />
         <option value="$PROJECT_DIR$/Server/pom.xml" />
-        <option value="$PROJECT_DIR$/Lib/pom.xml" />
         <option value="$PROJECT_DIR$/Server/thirdparty/hazelcast/hazelcast-3.3.3/bin/hazelcast.xml" />
         <option value="$PROJECT_DIR$/Server/hazelcast.xml" />
         <option value="$PROJECT_DIR$/Server/src/main/java/server/impl/ServerApplication.java" />
@@ -182,9 +188,10 @@
         <option value="$PROJECT_DIR$/SoftwareCenter/src/main/java/swt/AdministrationWindow.java" />
         <option value="$PROJECT_DIR$/Lib/src/main/java/lib/administration/IMenuManager.java" />
         <option value="$PROJECT_DIR$/SoftwareCenter/src/main/java/administration/impl/MenuManager.java" />
-        <option value="$PROJECT_DIR$/Lib/src/main/java/lib/administration/ISoCeMenuManager.java" />
         <option value="$PROJECT_DIR$/SoftwareCenter/pom.xml" />
         <option value="$PROJECT_DIR$/SoftwareCenter/src/main/java/administration/impl/SoCeMenuManager.java" />
+        <option value="$PROJECT_DIR$/Lib/pom.xml" />
+        <option value="$PROJECT_DIR$/Lib/src/main/java/lib/administration/ISoCeMenuManager.java" />
       </list>
     </option>
   </component>
@@ -2694,7 +2701,11 @@
       <created>1417547658930</created>
       <updated>1417547658930</updated>
     </task>
-    <option name="localTasksCounter" value="78" />
+    <task id="LOCAL-00078" summary="added ISoCeMenuManager.">
+      <created>1417547886358</created>
+      <updated>1417547886358</updated>
+    </task>
+    <option name="localTasksCounter" value="79" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2742,7 +2753,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="implement getNetworkHandler () in ClientApplication and ServerApplication." />
     <MESSAGE value="change INetworkHandler." />
     <MESSAGE value="change interface INetworkHandler." />
     <MESSAGE value="implement method clone () in class DefaultNetworkHandler." />
@@ -2767,7 +2777,8 @@
     <MESSAGE value="change administration tool" />
     <MESSAGE value="change administration tool." />
     <MESSAGE value="added interface IMenuManager." />
-    <option name="LAST_COMMIT_MESSAGE" value="added interface IMenuManager." />
+    <MESSAGE value="added ISoCeMenuManager." />
+    <option name="LAST_COMMIT_MESSAGE" value="added ISoCeMenuManager." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -3022,14 +3033,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Lib/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.2779043" vertical-offset="0" max-vertical-offset="2448">
-          <caret line="33" column="26" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Server/thirdparty/hazelcast/hazelcast-3.3.3/bin/hazelcast.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.38345864" vertical-offset="255" max-vertical-offset="4097">
@@ -3111,14 +3114,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Lib/src/main/java/lib/administration/ISoCeMenuManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18973215" vertical-offset="0" max-vertical-offset="448">
-          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SoftwareCenter/src/main/java/administration/AdministrationMain.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="527" max-vertical-offset="1343">
@@ -3127,10 +3122,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/SoftwareCenter/src/main/java/administration/impl/SoCeMenuManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="79" max-vertical-offset="527">
+          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#409#422#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/SoftwareCenter/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.49330357" vertical-offset="204" max-vertical-offset="952">
-          <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
+        <state vertical-scroll-proportion="0.62053573" vertical-offset="504" max-vertical-offset="952">
+          <caret line="46" column="21" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="21" />
           <folding />
         </state>
       </provider>
@@ -3143,6 +3149,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Lib/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.92410713" vertical-offset="1218" max-vertical-offset="2805">
+          <caret line="96" column="21" selection-start-line="96" selection-start-column="21" selection-end-line="96" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Client/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.5290178" vertical-offset="114" max-vertical-offset="1904">
@@ -3151,10 +3165,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SoftwareCenter/src/main/java/administration/impl/SoCeMenuManager.java">
+    <entry file="file://$PROJECT_DIR$/Lib/src/main/java/lib/administration/ISoCeMenuManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.265625" vertical-offset="0" max-vertical-offset="448">
-          <caret line="7" column="58" selection-start-line="7" selection-start-column="58" selection-end-line="7" selection-end-column="58" />
+        <state vertical-scroll-proportion="0.34151787" vertical-offset="0" max-vertical-offset="448">
+          <caret line="9" column="53" selection-start-line="9" selection-start-column="53" selection-end-line="9" selection-end-column="53" />
           <folding />
         </state>
       </provider>
