@@ -4,10 +4,12 @@ import administration.impl.AdministrationModuleManagerImpl;
 import administration.impl.SoCeMenuManager;
 import jface.impl.ConnectDialog;
 import org.eclipse.jface.window.Window;
+import org.eclipse.swt.SWT;
 import org.eclipse.swt.graphics.Point;
 import org.eclipse.swt.graphics.Rectangle;
 import org.eclipse.swt.layout.FillLayout;
 import org.eclipse.swt.widgets.Display;
+import org.eclipse.swt.widgets.Menu;
 import org.eclipse.swt.widgets.Shell;
 import swt.AdministrationWindow;
 
@@ -33,6 +35,9 @@ public class AdministrationApplication implements Runnable {
 
         //create menuManager for modules
         this.menuManager = new SoCeMenuManager(this.shell);
+
+        //set menuBar
+        this.menuManager.setMenu("main");
 
         //load modules
         this.moduleManager = new AdministrationModuleManagerImpl(this.menuManager, AdministrationApplication.buildNumber);
