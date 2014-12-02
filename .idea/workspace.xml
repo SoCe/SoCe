@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef56a392-8411-4f59-aaf5-6fa7624a33c2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lib/src/main/java/lib/module/administration/IAdministrationModuleManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SoftwareCenter/src/main/java/administration/AdministrationMain.java" afterPath="$PROJECT_DIR$/SoftwareCenter/src/main/java/administration/AdministrationMain.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SoftwareCenter/src/main/java/swt/AdministrationWindow.java" afterPath="$PROJECT_DIR$/SoftwareCenter/src/main/java/swt/AdministrationWindow.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SoftwareCenter/src/main/java/administration/impl/AdministrationModuleManagerImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="SoCe.iws" />
@@ -68,11 +66,35 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AdministrationMain.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="AdministrationMain.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SoftwareCenter/src/main/java/administration/AdministrationMain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.30357143" vertical-offset="867" max-vertical-offset="1394">
+            <state vertical-scroll-proportion="0.0" vertical-offset="867" max-vertical-offset="1394">
               <caret line="52" column="95" selection-start-line="52" selection-start-column="95" selection-end-line="52" selection-end-column="95" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdministrationModuleManagerImpl.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/SoftwareCenter/src/main/java/administration/impl/AdministrationModuleManagerImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="1.0390805" vertical-offset="942" max-vertical-offset="1547">
+              <caret line="82" column="9" selection-start-line="82" selection-start-column="9" selection-end-line="82" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#895#896#0" expanded="true" />
+                <element signature="e#934#935#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ServerModuleManagerImpl.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Server/src/main/java/server/impl/ServerModuleManagerImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="935" max-vertical-offset="1411">
+              <caret line="78" column="9" selection-start-line="78" selection-start-column="9" selection-end-line="78" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -113,7 +135,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/Client/src/main/java/client/ClientConsole.java" />
         <option value="$PROJECT_DIR$/Lib/src/main/java/lib/ldap/ILDAPClient.java" />
         <option value="$PROJECT_DIR$/Lib/src/main/java/lib/module/client/IClientModuleManager.java" />
         <option value="$PROJECT_DIR$/Lib/src/main/java/lib/module/server/IServerModuleManager.java" />
@@ -164,6 +185,7 @@
         <option value="$PROJECT_DIR$/SoftwareCenter/src/main/java/administration/AdministrationMain.java" />
         <option value="$PROJECT_DIR$/SoftwareCenter/src/main/java/swt/AdministrationWindow.java" />
         <option value="$PROJECT_DIR$/Lib/src/main/java/lib/module/administration/IAdministrationModuleManager.java" />
+        <option value="$PROJECT_DIR$/SoftwareCenter/src/main/java/administration/impl/AdministrationModuleManagerImpl.java" />
       </list>
     </option>
   </component>
@@ -2689,7 +2711,11 @@
       <created>1417548795926</created>
       <updated>1417548795926</updated>
     </task>
-    <option name="localTasksCounter" value="82" />
+    <task id="LOCAL-00082" summary="added interface IAdministrationModuleManager.">
+      <created>1417549165166</created>
+      <updated>1417549165166</updated>
+    </task>
+    <option name="localTasksCounter" value="83" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2737,7 +2763,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="implement method clone () in class DefaultNetworkHandler." />
     <MESSAGE value="implement getNetworkHandlerFactory in class ServerApplication." />
     <MESSAGE value="implement method getNetworkHandlerFactory ()." />
     <MESSAGE value="change SoCeServerHandler." />
@@ -2762,7 +2787,8 @@
     <MESSAGE value="added ISoCeMenuManager." />
     <MESSAGE value="change pom.xml dependencies." />
     <MESSAGE value="implement SoCeMenuManager." />
-    <option name="LAST_COMMIT_MESSAGE" value="implement SoCeMenuManager." />
+    <MESSAGE value="added interface IAdministrationModuleManager." />
+    <option name="LAST_COMMIT_MESSAGE" value="added interface IAdministrationModuleManager." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2774,13 +2800,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Lib/src/main/java/lib/activedirectory/SoCeActiveDirectory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
-          <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Lib/src/main/java/lib/module/IModuleManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.30425057" vertical-offset="0" max-vertical-offset="447">
@@ -3128,14 +3147,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Server/src/main/java/server/impl/ServerModuleManagerImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.9310346" vertical-offset="0" max-vertical-offset="1411">
-          <caret line="83" column="27" selection-start-line="83" selection-start-column="27" selection-end-line="83" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Lib/src/main/java/lib/module/server/IServerModuleManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.265625" vertical-offset="0" max-vertical-offset="448">
@@ -3156,9 +3167,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SoftwareCenter/src/main/java/administration/AdministrationMain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.30357143" vertical-offset="867" max-vertical-offset="1394">
+        <state vertical-scroll-proportion="0.0" vertical-offset="867" max-vertical-offset="1394">
           <caret line="52" column="95" selection-start-line="52" selection-start-column="95" selection-end-line="52" selection-end-column="95" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/src/main/java/server/impl/ServerModuleManagerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="935" max-vertical-offset="1411">
+          <caret line="78" column="9" selection-start-line="78" selection-start-column="9" selection-end-line="78" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SoftwareCenter/src/main/java/administration/impl/AdministrationModuleManagerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.0390805" vertical-offset="942" max-vertical-offset="1547">
+          <caret line="82" column="9" selection-start-line="82" selection-start-column="9" selection-end-line="82" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#895#896#0" expanded="true" />
+            <element signature="e#934#935#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
