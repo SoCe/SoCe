@@ -19,6 +19,12 @@
     </repositories>
 
     <dependencies>
+        <dependency>
+            <groupId>com.jukusoft.soce.lib</groupId>
+            <artifactId>com.jukusoft.soce.lib</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
         <!-- SWT -->
         <dependency>
             <groupId>org.eclipse.swt</groupId>
