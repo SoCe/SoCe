@@ -8,4 +8,5 @@ import org.eclipse.swt.widgets.Menu;
 public interface ISoCeMenuManager {
     public void setMenu (String menuName);
     public void putMenu (String menuName, Menu menu);
+    public Menu getMenu (String menuName);
 }

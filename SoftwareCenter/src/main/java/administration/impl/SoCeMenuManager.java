@@ -36,4 +36,14 @@ public class SoCeMenuManager implements ISoCeMenuManager {
     public void putMenu(String menuName, Menu menu) {
         this.menuHashMap.put(menuName, menu);
     }
+
+    @Override
+    public Menu getMenu(String menuName) {
+        if (this.menuHashMap.containsKey(menuName)) {
+            return this.menuHashMap.get(menuName);
+        } else {
+            LoggerInstance.getLogger().error("SoCeMenuManager: menu " + menuName + " does not exists.");
+            return null;
+        }
+    }
 }

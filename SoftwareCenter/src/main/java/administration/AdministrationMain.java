@@ -1,5 +1,6 @@
 package administration;
 
+import administration.impl.SoCeMenuManager;
 import jface.impl.ConnectDialog;
 import org.eclipse.jface.window.Window;
 import org.eclipse.swt.graphics.Point;
@@ -44,6 +45,9 @@ public class AdministrationMain {
         }
 
         shell.setText("SoftwareCenter Management Tools");
+
+        //create SoCeMenuManager for modules
+        SoCeMenuManager menuManager = new SoCeMenuManager(shell);
 
         //create main application window
         AdministrationWindow administrationWindow = new AdministrationWindow(shell);
