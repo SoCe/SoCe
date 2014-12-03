@@ -7,6 +7,7 @@ import lib.server.hazelcast.HazelcastManager;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Queue;
+import java.util.concurrent.BlockingQueue;
 
 /**
  * Created by Justin on 03.12.2014.
@@ -18,7 +19,7 @@ public class EventQueueThreadPool implements Runnable {
     protected boolean isInterrupted = false;
     protected SoCeServer server = null;
     protected int maxEventsperHandlerThread = 5;
-    protected Queue<INetworkMessage> eventQueue = null;
+    protected BlockingQueue<INetworkMessage> eventQueue = null;
     protected int minHandlerThreads = 3;
 
     public EventQueueThreadPool (SoCeServer server) {
@@ -64,7 +65,7 @@ public class EventQueueThreadPool implements Runnable {
     }
 
     public void startNewEventQueueHandlerThread () {
-        EventQueueHandlerThread eventQueueHandlerThread = new EventQueueHandlerThread();
+        EventQueueHandlerThread eventQueueHandlerThread = new EventQueueHandlerThread(this.eventQueue);
         eventQueueHandlerThread.setEventQueueHandlerThreadFinishedListener(this::onEventQueueHandlerThreadFinsihed);
 
         //put thread into the list

@@ -28,6 +28,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import server.handler.ServerInfoHandler;
 import server.handler.SoCeServerHandler;
+import server.network.event.EventQueueThreadPool;
 
 import java.io.File;
 import java.io.IOException;
@@ -119,6 +120,11 @@ public class ServerApplication implements IServer {
         SoCeClusterManager clusterManager = new SoCeClusterManager(cluster);
         Thread clusterManagerThread = new Thread(clusterManager);
         clusterManagerThread.start();
+
+        //create EventQueueHandlerThreadPool
+        EventQueueThreadPool eventQueueThreadPool = new EventQueueThreadPool(server);
+        Thread eventQueueThread = new Thread(eventQueueThreadPool);
+        eventQueueThread.start();
 
         //load modules
         this.moduleManager = new ServerModuleManagerImpl(this, ServerApplication.buildNumber);
