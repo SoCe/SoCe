@@ -15,7 +15,9 @@ import lib.cluster.SoCeServer;
 import lib.logger.LoggerInstance;
 import lib.server.IServer;
 import server.handler.SoCeServerHandler;
+import server.handler.impl.SoCeServerObjectHandler;
 
+import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
 
 /**
@@ -36,6 +38,9 @@ public class ServerManager implements Runnable {
         EventLoopGroup bossGroup = new NioEventLoopGroup();
         EventLoopGroup workerGroup = new NioEventLoopGroup();
 
+        Executor bossPool = Executors.newCachedThreadPool();
+        Executor workerPool = Executors.newCachedThreadPool();
+
         try {
             ServerBootstrap b = new ServerBootstrap();
 
@@ -47,10 +52,12 @@ public class ServerManager implements Runnable {
                             //uses serialization of objects
                             ch.pipeline().addLast(new ObjectDecoder(ClassResolvers.softCachingResolver(ClassLoader.getSystemClassLoader())),
                                     new ObjectEncoder(),
-                                    new SoCeServerHandler());
+                                    new SoCeServerHandler(),
+                                    new SoCeServerObjectHandler());
                         }
                     })
                     .option(ChannelOption.SO_BACKLOG, 128)
+                    .option(ChannelOption.TCP_NODELAY, true)
                     .childOption(ChannelOption.SO_KEEPALIVE, true);
 
             // Bind and start to accept incoming connections.
