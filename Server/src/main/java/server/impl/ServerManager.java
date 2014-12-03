@@ -13,6 +13,8 @@ import lib.logger.LoggerInstance;
 import lib.server.IServer;
 import server.handler.SoCeServerHandler;
 
+import java.util.concurrent.Executors;
+
 /**
  * Created by Justin on 25.11.2014.
  */
@@ -30,8 +32,10 @@ public class ServerManager implements Runnable {
     public void run() {
         EventLoopGroup bossGroup = new NioEventLoopGroup();
         EventLoopGroup workerGroup = new NioEventLoopGroup();
+
         try {
             ServerBootstrap b = new ServerBootstrap();
+
             b.group(bossGroup, workerGroup)
                     .channel(NioServerSocketChannel.class)
                     .childHandler(new ChannelInitializer<SocketChannel>() {
