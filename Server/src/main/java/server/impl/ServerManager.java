@@ -8,6 +8,9 @@ import io.netty.channel.EventLoopGroup;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
+import io.netty.handler.codec.serialization.ClassResolvers;
+import io.netty.handler.codec.serialization.ObjectDecoder;
+import io.netty.handler.codec.serialization.ObjectEncoder;
 import lib.cluster.SoCeServer;
 import lib.logger.LoggerInstance;
 import lib.server.IServer;
@@ -41,7 +44,10 @@ public class ServerManager implements Runnable {
                     .childHandler(new ChannelInitializer<SocketChannel>() {
                         @Override
                         public void initChannel(SocketChannel ch) throws Exception {
-                            ch.pipeline().addLast(new SoCeServerHandler());
+                            //uses serialization of objects
+                            ch.pipeline().addLast(new ObjectDecoder(ClassResolvers.softCachingResolver(ClassLoader.getSystemClassLoader())),
+                                    new ObjectEncoder(),
+                                    new SoCeServerHandler());
                         }
                     })
                     .option(ChannelOption.SO_BACKLOG, 128)
