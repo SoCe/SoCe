@@ -56,7 +56,6 @@ public class ServerManager implements Runnable {
                             //uses serialization of objects
                             ch.pipeline().addLast(new ObjectDecoder(ClassResolvers.softCachingResolver(ClassLoader.getSystemClassLoader())),
                                     new ObjectEncoder(),
-                                    new SoCeServerHandler(),
                                     new SoCeServerObjectHandler(ServerManager.this.eventQueue));
                         }
                     })
