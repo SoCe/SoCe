@@ -1,6 +1,9 @@
 package server.network.event;
 
 import lib.network.message.INetworkMessage;
+import lib.network.message.handler.INetworkHandler;
+import lib.network.message.handler.INetworkHandlerManager;
+import lib.network.message.handler.factory.NetworkHandlerFactory;
 import server.network.event.listener.EventQueueHandlerThreadFinishedListener;
 
 import java.util.Queue;
@@ -15,9 +18,11 @@ public class EventQueueHandlerThread implements Runnable {
     protected boolean hasFinished = false;
     protected EventQueueHandlerThreadFinishedListener eventQueueHandlerThreadFinishedListener = null;
     protected BlockingQueue<INetworkMessage> eventQueue = null;
+    protected NetworkHandlerFactory networkHandlerFactory = null;
 
-    public EventQueueHandlerThread (BlockingQueue<INetworkMessage> eventQueue) {
+    public EventQueueHandlerThread (BlockingQueue<INetworkMessage> eventQueue, NetworkHandlerFactory networkHandlerFactory) {
         this.eventQueue = eventQueue;
+        this.networkHandlerFactory = networkHandlerFactory;
     }
 
     @Override
@@ -27,6 +32,10 @@ public class EventQueueHandlerThread implements Runnable {
 
             //get NetworkMessage
             INetworkMessage message = this.eventQueue.poll();
+
+            //get handler
+            INetworkHandler networkHandler = this.networkHandlerFactory.buildNetworkHandler(message);
+            networkHandler.receive(message.getChannelHandlerContext(), message);
         }
 
         this.hasFinished = true;

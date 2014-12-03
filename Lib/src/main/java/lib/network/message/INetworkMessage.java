@@ -1,5 +1,7 @@
 package lib.network.message;
 
+import io.netty.channel.ChannelHandlerContext;
+
 import java.io.Serializable;
 
 /**
@@ -7,4 +9,6 @@ import java.io.Serializable;
  */
 public interface INetworkMessage extends Serializable {
     public String getMessageClass ();
+    public ChannelHandlerContext getChannelHandlerContext ();
+    public void setChannelHandlerContext (ChannelHandlerContext ctx);
 }
