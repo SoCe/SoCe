@@ -26,7 +26,7 @@ public class EventQueueHandlerThread implements Runnable {
     }
 
     @Override
-    public void run() {
+    public synchronized void run() {
         while (!this.isInterrupted) {
             //work in queue
 
@@ -34,9 +34,11 @@ public class EventQueueHandlerThread implements Runnable {
                 //get NetworkMessage
                 INetworkMessage message = this.eventQueue.poll();
 
-                //get handler
-                INetworkHandler networkHandler = this.networkHandlerFactory.buildNetworkHandler(message);
-                networkHandler.receive(message.getChannelHandlerContext(), message);
+                if (message != null) {
+                    //get handler
+                    INetworkHandler networkHandler = this.networkHandlerFactory.buildNetworkHandler(message);
+                    networkHandler.receive(message.getChannelHandlerContext(), message);
+                }
             } else {
                 try {
                     Thread.sleep(50);

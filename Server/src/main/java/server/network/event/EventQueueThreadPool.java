@@ -34,14 +34,17 @@ public class EventQueueThreadPool implements Runnable {
     public void run() {
         //cleanup
 
+        //get queue
+        this.eventQueue = HazelcastManager.getClient().getQueue("server-event-queue-" + this.server.getServerID());
+
+        //add a NullNetworkMessage to load the queue
+        this.eventQueue.offer(new NullNetworkMessage());
+
         //create min threads
         for (int i = 0; i < this.minHandlerThreads; i++) {
             //start new Handler Thread
             this.startNewEventQueueHandlerThread();
         }
-
-        //get queue
-        this.eventQueue = HazelcastManager.getClient().getQueue("server-event-queue-" + this.server.getServerID());
 
         while (!this.isInterrupted) {
             //check if there enough threads for handling the requests
