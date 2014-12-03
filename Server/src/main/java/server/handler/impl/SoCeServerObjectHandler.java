@@ -31,7 +31,7 @@ public class SoCeServerObjectHandler extends SimpleChannelInboundHandler {
 
         //http://www.rune-server.org/programming/application-development/tutorials/485607-read-write-object-netty-implementation.html
 
-        LoggerInstance.getLogger().debug("Message received.");
+        LoggerInstance.getLogger().debug("Message " + message.getMessageClass() + " received.");
     }
 
     @Override
