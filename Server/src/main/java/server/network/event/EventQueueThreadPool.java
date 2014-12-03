@@ -3,6 +3,7 @@ package server.network.event;
 import lib.cluster.SoCeServer;
 import lib.logger.LoggerInstance;
 import lib.network.message.INetworkMessage;
+import lib.network.message.handler.factory.NetworkHandlerFactory;
 import lib.server.hazelcast.HazelcastManager;
 
 import java.util.ArrayList;
@@ -22,9 +23,11 @@ public class EventQueueThreadPool implements Runnable {
     protected int maxEventsperHandlerThread = 5;
     protected BlockingQueue<INetworkMessage> eventQueue = null;
     protected int minHandlerThreads = 3;
+    protected NetworkHandlerFactory networkHandlerFactory = null;
 
-    public EventQueueThreadPool (SoCeServer server) {
+    public EventQueueThreadPool (SoCeServer server, NetworkHandlerFactory networkHandlerFactory) {
         this.server = server;
+        this.networkHandlerFactory = networkHandlerFactory;
     }
 
     @Override
@@ -66,7 +69,7 @@ public class EventQueueThreadPool implements Runnable {
     }
 
     public void startNewEventQueueHandlerThread () {
-        EventQueueHandlerThread eventQueueHandlerThread = new EventQueueHandlerThread(this.eventQueue);
+        EventQueueHandlerThread eventQueueHandlerThread = new EventQueueHandlerThread(this.eventQueue, this.networkHandlerFactory);
         eventQueueHandlerThread.setEventQueueHandlerThreadFinishedListener(this::onEventQueueHandlerThreadFinsihed);
 
         LoggerInstance.getLogger().debug("Create new EventQueueHandlerThread.");

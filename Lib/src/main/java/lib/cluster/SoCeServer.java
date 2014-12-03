@@ -1,9 +1,11 @@
 package lib.cluster;
 
+import java.io.Serializable;
+
 /**
  * Created by Justin on 23.11.2014.
  */
-public class SoCeServer {
+public class SoCeServer implements Serializable {
 
     protected int serverID = -1;
     protected String serverName = "";

@@ -1,12 +1,13 @@
 package lib.cluster;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
 /**
  * Created by Justin on 23.11.2014.
  */
-public class SoCeCluster {
+public class SoCeCluster implements Serializable {
 
     protected List<SoCeServer> serverList = new ArrayList<SoCeServer>();
     protected String clusterName = "";

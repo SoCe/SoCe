@@ -30,12 +30,20 @@ public class EventQueueHandlerThread implements Runnable {
         while (!this.isInterrupted) {
             //work in queue
 
-            //get NetworkMessage
-            INetworkMessage message = this.eventQueue.poll();
+            if (this.eventQueue.size() > 0) {
+                //get NetworkMessage
+                INetworkMessage message = this.eventQueue.poll();
 
-            //get handler
-            INetworkHandler networkHandler = this.networkHandlerFactory.buildNetworkHandler(message);
-            networkHandler.receive(message.getChannelHandlerContext(), message);
+                //get handler
+                INetworkHandler networkHandler = this.networkHandlerFactory.buildNetworkHandler(message);
+                networkHandler.receive(message.getChannelHandlerContext(), message);
+            } else {
+                try {
+                    Thread.sleep(50);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
         }
 
         this.hasFinished = true;

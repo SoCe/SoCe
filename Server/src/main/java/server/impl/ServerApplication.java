@@ -122,7 +122,7 @@ public class ServerApplication implements IServer {
         clusterManagerThread.start();
 
         //create EventQueueHandlerThreadPool
-        EventQueueThreadPool eventQueueThreadPool = new EventQueueThreadPool(server);
+        EventQueueThreadPool eventQueueThreadPool = new EventQueueThreadPool(server, networkHandlerFactory);
         Thread eventQueueThread = new Thread(eventQueueThreadPool);
         eventQueueThread.start();
 
