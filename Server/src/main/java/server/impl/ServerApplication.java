@@ -16,6 +16,7 @@ import lib.cluster.SoCeServer;
 import lib.ldap.impl.SoCeLDAPClient;
 import lib.logger.LoggerInstance;
 import lib.module.IModuleManager;
+import lib.network.message.INetworkMessage;
 import lib.network.message.handler.INetworkHandlerManager;
 import lib.network.message.handler.factory.NetworkHandlerFactory;
 import lib.network.message.handler.impl.DefaultNetworkHandlerManager;
@@ -32,6 +33,7 @@ import server.network.event.EventQueueThreadPool;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.concurrent.BlockingQueue;
 
 /**
  * Created by Justin on 23.11.2014.
@@ -121,8 +123,11 @@ public class ServerApplication implements IServer {
         Thread clusterManagerThread = new Thread(clusterManager);
         clusterManagerThread.start();
 
+        //get queue
+        BlockingQueue<INetworkMessage> eventQueue = HazelcastManager.getClient().getQueue("server-event-queue-" + this.server.getServerID());
+
         //create EventQueueHandlerThreadPool
-        EventQueueThreadPool eventQueueThreadPool = new EventQueueThreadPool(server, networkHandlerFactory);
+        EventQueueThreadPool eventQueueThreadPool = new EventQueueThreadPool(server, eventQueue, networkHandlerFactory);
         Thread eventQueueThread = new Thread(eventQueueThreadPool);
         eventQueueThread.start();
 
@@ -130,7 +135,7 @@ public class ServerApplication implements IServer {
         this.moduleManager = new ServerModuleManagerImpl(this, ServerApplication.buildNumber);
         moduleManager.loadModules("./modules");
 
-        ServerManager serverManager = new ServerManager(this.server, this);
+        ServerManager serverManager = new ServerManager(this.server, eventQueue, this);
         Thread thread = new Thread(serverManager);
         thread.start();
 

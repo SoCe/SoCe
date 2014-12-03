@@ -6,14 +6,24 @@ import io.netty.channel.ChannelFutureListener;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
 import lib.logger.LoggerInstance;
+import lib.network.message.INetworkMessage;
 import lib.network.message.NetworkMessage;
 
 import java.io.UnsupportedEncodingException;
+import java.util.Queue;
+import java.util.concurrent.BlockingQueue;
 
 /**
  * Created by Justin on 03.12.2014.
  */
 public class SoCeServerObjectHandler extends SimpleChannelInboundHandler {
+
+    protected Queue<INetworkMessage> eventQueue = null;
+
+    public SoCeServerObjectHandler (Queue<INetworkMessage> eventQueue) {
+        this.eventQueue = eventQueue;
+    }
+
     @Override
     protected void messageReceived(ChannelHandlerContext channelHandlerContext, Object o) throws Exception {
         //cast to NetworkMessage

@@ -25,17 +25,15 @@ public class EventQueueThreadPool implements Runnable {
     protected int minHandlerThreads = 3;
     protected NetworkHandlerFactory networkHandlerFactory = null;
 
-    public EventQueueThreadPool (SoCeServer server, NetworkHandlerFactory networkHandlerFactory) {
+    public EventQueueThreadPool (SoCeServer server, BlockingQueue<INetworkMessage> eventQueue, NetworkHandlerFactory networkHandlerFactory) {
         this.server = server;
+        this.eventQueue = eventQueue;
         this.networkHandlerFactory = networkHandlerFactory;
     }
 
     @Override
     public void run() {
         //cleanup
-
-        //get queue
-        this.eventQueue = HazelcastManager.getClient().getQueue("server-event-queue-" + this.server.getServerID());
 
         //add a NullNetworkMessage to load the queue
         this.eventQueue.offer(new NullNetworkMessage());

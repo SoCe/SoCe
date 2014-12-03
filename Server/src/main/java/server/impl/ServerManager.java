@@ -13,10 +13,12 @@ import io.netty.handler.codec.serialization.ObjectDecoder;
 import io.netty.handler.codec.serialization.ObjectEncoder;
 import lib.cluster.SoCeServer;
 import lib.logger.LoggerInstance;
+import lib.network.message.INetworkMessage;
 import lib.server.IServer;
 import server.handler.SoCeServerHandler;
 import server.handler.impl.SoCeServerObjectHandler;
 
+import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
 
@@ -27,9 +29,11 @@ public class ServerManager implements Runnable {
 
     protected SoCeServer server = null;
     protected IServer serverApplication = null;
+    protected BlockingQueue<INetworkMessage> eventQueue = null;
 
-    public ServerManager (SoCeServer server, IServer serverApplication) {
+    public ServerManager (SoCeServer server, BlockingQueue<INetworkMessage> eventQueue, IServer serverApplication) {
         this.server = server;
+        this.eventQueue = eventQueue;
         this.serverApplication = serverApplication;
     }
 
@@ -53,7 +57,7 @@ public class ServerManager implements Runnable {
                             ch.pipeline().addLast(new ObjectDecoder(ClassResolvers.softCachingResolver(ClassLoader.getSystemClassLoader())),
                                     new ObjectEncoder(),
                                     new SoCeServerHandler(),
-                                    new SoCeServerObjectHandler());
+                                    new SoCeServerObjectHandler(ServerManager.this.eventQueue));
                         }
                     })
                     .option(ChannelOption.SO_BACKLOG, 128)
