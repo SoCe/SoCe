@@ -1,6 +1,7 @@
 package server.network.event;
 
 import lib.cluster.SoCeServer;
+import lib.logger.LoggerInstance;
 import lib.network.message.INetworkMessage;
 import lib.server.hazelcast.HazelcastManager;
 
@@ -67,6 +68,8 @@ public class EventQueueThreadPool implements Runnable {
     public void startNewEventQueueHandlerThread () {
         EventQueueHandlerThread eventQueueHandlerThread = new EventQueueHandlerThread(this.eventQueue);
         eventQueueHandlerThread.setEventQueueHandlerThreadFinishedListener(this::onEventQueueHandlerThreadFinsihed);
+
+        LoggerInstance.getLogger().debug("Create new EventQueueHandlerThread.");
 
         //put thread into the list
         this.eventQueueHandlerThreadList.add(eventQueueHandlerThread);
