@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef56a392-8411-4f59-aaf5-6fa7624a33c2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/src/main/java/server/network/event/EventQueueHandlerThread.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/src/main/java/server/network/event/listener/EventQueueHandlerThreadFinishedListener.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/src/main/java/server/network/event/EventQueueThreadPool.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="SoCe.iws" />
@@ -51,7 +48,7 @@
       <file leaf-file-name="EventQueueThreadPool.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Server/src/main/java/server/network/event/EventQueueThreadPool.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="1700">
+            <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="1700">
               <caret line="20" column="35" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -92,8 +89,8 @@
       <file leaf-file-name="ServerApplication.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Server/src/main/java/server/impl/ServerApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.48872182" vertical-offset="678" max-vertical-offset="1751">
-              <caret line="101" column="49" selection-start-line="101" selection-start-column="49" selection-end-line="101" selection-end-column="49" />
+            <state vertical-scroll-proportion="0.56541353" vertical-offset="678" max-vertical-offset="1751">
+              <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -142,7 +139,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/Lib/src/main/java/lib/storage/INoSQLDatabase.java" />
         <option value="$PROJECT_DIR$/Lib/src/main/java/lib/ldap/LDAPTree.java" />
         <option value="$PROJECT_DIR$/Lib/src/main/java/lib/ldap/LDAPOrganisationalUnit.java" />
         <option value="$PROJECT_DIR$/Lib/src/main/java/lib/ldap/LDAPNode.java" />
@@ -193,6 +189,7 @@
         <option value="$PROJECT_DIR$/Server/src/main/java/server/network/event/EventQueueHandlerThread.java" />
         <option value="$PROJECT_DIR$/Server/src/main/java/server/network/event/EventQueueThreadPool.java" />
         <option value="$PROJECT_DIR$/Server/src/main/java/server/impl/ServerApplication.java" />
+        <option value="$PROJECT_DIR$/Server/configuration.conf" />
       </list>
     </option>
   </component>
@@ -2860,7 +2857,11 @@
       <created>1417627733752</created>
       <updated>1417627733752</updated>
     </task>
-    <option name="localTasksCounter" value="90" />
+    <task id="LOCAL-00090" summary="added configuration file.">
+      <created>1417632457236</created>
+      <updated>1417632457236</updated>
+    </task>
+    <option name="localTasksCounter" value="91" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2877,6 +2878,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32784638" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32647464" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" x="74" y="310" width="1336" height="239" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -2888,7 +2890,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32921812" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32647464" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" x="74" y="310" width="1336" height="239" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -2908,7 +2909,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="set hazelcast version from 3.3.1 to 3.3.3." />
     <MESSAGE value="integrate hazelcast client in ServerApplication." />
     <MESSAGE value="added hazelcast." />
     <MESSAGE value="change hazelcast configuration." />
@@ -2933,7 +2933,8 @@
     <MESSAGE value="integrate POJO serialization to netty server." />
     <MESSAGE value="small cleanup." />
     <MESSAGE value="added object serialization encoder and decoder to netty server." />
-    <option name="LAST_COMMIT_MESSAGE" value="added object serialization encoder and decoder to netty server." />
+    <MESSAGE value="added configuration file." />
+    <option name="LAST_COMMIT_MESSAGE" value="added configuration file." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2945,13 +2946,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Lib/src/main/java/lib/storage/IStorageManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1901566" vertical-offset="0" max-vertical-offset="447">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Lib/src/main/java/lib/storage/INoSQLDatabase.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.1901566" vertical-offset="0" max-vertical-offset="447">
@@ -3068,14 +3062,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.38345864" vertical-offset="255" max-vertical-offset="4097">
           <caret line="30" column="37" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Server/hazelcast.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4174107" vertical-offset="0" max-vertical-offset="1207">
-          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3298,6 +3284,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Lib/src/main/java/lib/network/message/handler/INetworkHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.22566372" vertical-offset="0" max-vertical-offset="678">
+          <caret line="10" column="69" selection-start-line="10" selection-start-column="69" selection-end-line="10" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/hazelcast.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2758112" vertical-offset="0" max-vertical-offset="1207">
+          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Server/src/main/java/server/network/event/EventQueueThreadPool.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="1700">
@@ -3317,18 +3319,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Lib/src/main/java/lib/network/message/handler/INetworkHandler.java">
+    <entry file="file://$PROJECT_DIR$/Server/configuration.conf">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22566372" vertical-offset="0" max-vertical-offset="678">
-          <caret line="10" column="69" selection-start-line="10" selection-start-column="69" selection-end-line="10" selection-end-column="69" />
+        <state vertical-scroll-proportion="0.15620214" vertical-offset="0" max-vertical-offset="653">
+          <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Server/src/main/java/server/impl/ServerApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.48872182" vertical-offset="678" max-vertical-offset="1751">
-          <caret line="101" column="49" selection-start-line="101" selection-start-column="49" selection-end-line="101" selection-end-column="49" />
+        <state vertical-scroll-proportion="0.56541353" vertical-offset="678" max-vertical-offset="1751">
+          <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
           <folding />
         </state>
       </provider>
