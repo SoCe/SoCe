@@ -29,6 +29,8 @@ public class SoCeServerObjectHandler extends SimpleChannelInboundHandler {
         //cast to NetworkMessage
         NetworkMessage message = (NetworkMessage) o;
 
+        //https://www.youtube.com/watch?v=THcAwoA5G2w
+
         //http://www.rune-server.org/programming/application-development/tutorials/485607-read-write-object-netty-implementation.html
 
         LoggerInstance.getLogger().debug("Message " + message.getMessageClass() + " received.");

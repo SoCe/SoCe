@@ -30,6 +30,7 @@ public class ServerManager implements Runnable {
     protected SoCeServer server = null;
     protected IServer serverApplication = null;
     protected BlockingQueue<INetworkMessage> eventQueue = null;
+    protected int eventloopssize = 32;
 
     public ServerManager (SoCeServer server, BlockingQueue<INetworkMessage> eventQueue, IServer serverApplication) {
         this.server = server;
@@ -40,7 +41,7 @@ public class ServerManager implements Runnable {
     @Override
     public void run() {
         EventLoopGroup bossGroup = new NioEventLoopGroup();
-        EventLoopGroup workerGroup = new NioEventLoopGroup();
+        EventLoopGroup workerGroup = new NioEventLoopGroup(this.eventloopssize);
 
         Executor bossPool = Executors.newCachedThreadPool();
         Executor workerPool = Executors.newCachedThreadPool();

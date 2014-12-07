@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef56a392-8411-4f59-aaf5-6fa7624a33c2" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server/src/main/java/server/impl/ServerManager.java" afterPath="$PROJECT_DIR$/Server/src/main/java/server/impl/ServerManager.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/src/main/java/client/impl/SoCeClient.java" afterPath="$PROJECT_DIR$/Client/src/main/java/client/impl/SoCeClient.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server/src/main/java/server/handler/impl/SoCeServerObjectHandler.java" afterPath="$PROJECT_DIR$/Server/src/main/java/server/handler/impl/SoCeServerObjectHandler.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -30,38 +31,28 @@
       <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Client/src/main/java/client/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="714">
+            <state vertical-scroll-proportion="0.0" vertical-offset="13" max-vertical-offset="714">
               <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ClientApplication.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Client/src/main/java/client/impl/ClientApplication.java">
+      <file leaf-file-name="SoCeClient.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Client/src/main/java/client/impl/SoCeClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="1105">
-              <caret line="53" column="98" selection-start-line="53" selection-start-column="98" selection-end-line="53" selection-end-column="98" />
+            <state vertical-scroll-proportion="0.5471264" vertical-offset="238" max-vertical-offset="986">
+              <caret line="41" column="55" selection-start-line="41" selection-start-column="55" selection-end-line="41" selection-end-column="55" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ServerMain.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ServerMain.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Server/src/main/java/server/ServerMain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5691964" vertical-offset="0" max-vertical-offset="476">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
               <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SoCeServerObjectHandler.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Server/src/main/java/server/handler/impl/SoCeServerObjectHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="714">
-              <caret line="33" column="96" selection-start-line="33" selection-start-column="96" selection-end-line="33" selection-end-column="96" />
               <folding />
             </state>
           </provider>
@@ -70,11 +61,9 @@
       <file leaf-file-name="EventQueueThreadPool.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Server/src/main/java/server/network/event/EventQueueThreadPool.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="291" max-vertical-offset="1581">
+            <state vertical-scroll-proportion="0.0" vertical-offset="595" max-vertical-offset="1836">
               <caret line="35" column="17" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
-              <folding>
-                <element signature="e#560#585#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -89,21 +78,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ServerApplication.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Server/src/main/java/server/impl/ServerApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1358" max-vertical-offset="1887">
-              <caret line="137" column="87" selection-start-line="137" selection-start-column="87" selection-end-line="137" selection-end-column="87" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ServerManager.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Server/src/main/java/server/impl/ServerManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="1224">
-              <caret line="57" column="56" selection-start-line="57" selection-start-column="56" selection-end-line="57" selection-end-column="56" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="1241">
+              <caret line="43" column="80" selection-start-line="43" selection-start-column="80" selection-end-line="43" selection-end-column="80" />
               <folding />
             </state>
           </provider>
@@ -170,9 +149,9 @@
         <option value="$PROJECT_DIR$/Server/src/main/java/server/network/event/EventQueueHandlerThread.java" />
         <option value="$PROJECT_DIR$/Server/src/main/java/server/network/event/EventQueueThreadPool.java" />
         <option value="$PROJECT_DIR$/Server/src/main/java/server/impl/ServerApplication.java" />
-        <option value="$PROJECT_DIR$/Server/src/main/java/server/impl/ServerManager.java" />
-        <option value="$PROJECT_DIR$/Client/src/main/java/client/impl/SoCeClient.java" />
         <option value="$PROJECT_DIR$/Server/src/main/java/server/handler/impl/SoCeServerObjectHandler.java" />
+        <option value="$PROJECT_DIR$/Client/src/main/java/client/impl/SoCeClient.java" />
+        <option value="$PROJECT_DIR$/Server/src/main/java/server/impl/ServerManager.java" />
       </list>
     </option>
   </component>
@@ -214,7 +193,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -2128,6 +2106,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -2880,7 +2859,11 @@
       <created>1417636706201</created>
       <updated>1417636706201</updated>
     </task>
-    <option name="localTasksCounter" value="100" />
+    <task id="LOCAL-00100" summary="change SoCeServerObjectHandler.">
+      <created>1417636972199</created>
+      <updated>1417636972199</updated>
+    </task>
+    <option name="localTasksCounter" value="101" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2951,9 +2934,9 @@
     <MESSAGE value="change eventQueue." />
     <MESSAGE value="change SoCeServer." />
     <MESSAGE value="change EventQueueHandlerThread." />
-    <MESSAGE value="change SoCeServerObjectHandler." />
     <MESSAGE value="small cleanup." />
-    <option name="LAST_COMMIT_MESSAGE" value="small cleanup." />
+    <MESSAGE value="change SoCeServerObjectHandler." />
+    <option name="LAST_COMMIT_MESSAGE" value="change SoCeServerObjectHandler." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -3039,7 +3022,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.62053573" vertical-offset="504" max-vertical-offset="952">
           <caret line="46" column="21" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3047,7 +3029,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5862069" vertical-offset="153" max-vertical-offset="1921">
           <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3055,7 +3036,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.92410713" vertical-offset="1218" max-vertical-offset="2805">
           <caret line="96" column="21" selection-start-line="96" selection-start-column="21" selection-end-line="96" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3063,7 +3043,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.5290178" vertical-offset="114" max-vertical-offset="1904">
           <caret line="47" column="24" selection-start-line="47" selection-start-column="24" selection-end-line="47" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3127,7 +3106,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="436" max-vertical-offset="1938">
           <caret line="39" column="41" selection-start-line="39" selection-start-column="41" selection-end-line="39" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3149,7 +3127,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="1547">
           <caret line="22" column="39" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3157,7 +3134,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
           <caret line="11" column="60" selection-start-line="11" selection-start-column="60" selection-end-line="11" selection-end-column="60" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3165,7 +3141,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2758112" vertical-offset="0" max-vertical-offset="1207">
           <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3173,7 +3148,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.15620214" vertical-offset="0" max-vertical-offset="653">
           <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3181,7 +3155,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.34772727" vertical-offset="0" max-vertical-offset="440">
           <caret line="10" column="69" selection-start-line="10" selection-start-column="69" selection-end-line="10" selection-end-column="69" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3189,7 +3162,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.34772727" vertical-offset="0" max-vertical-offset="440">
           <caret line="9" column="64" selection-start-line="9" selection-start-column="64" selection-end-line="9" selection-end-column="64" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3197,9 +3169,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.45535713" vertical-offset="0" max-vertical-offset="448">
           <caret line="12" column="69" selection-start-line="12" selection-start-column="69" selection-end-line="12" selection-end-column="69" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3207,7 +3176,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.18973215" vertical-offset="34" max-vertical-offset="697">
           <caret line="7" column="47" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3215,7 +3183,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.265625" vertical-offset="0" max-vertical-offset="510">
           <caret line="9" column="48" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3223,7 +3190,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.265625" vertical-offset="0" max-vertical-offset="448">
           <caret line="7" column="54" selection-start-line="7" selection-start-column="54" selection-end-line="7" selection-end-column="54" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3231,7 +3197,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6964286" vertical-offset="436" max-vertical-offset="884">
           <caret line="67" column="25" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3239,7 +3204,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="87" max-vertical-offset="578">
           <caret line="24" column="61" selection-start-line="24" selection-start-column="61" selection-end-line="24" selection-end-column="61" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3247,10 +3211,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.79294115" vertical-offset="3" max-vertical-offset="476">
           <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
-          <folding>
-            <element signature="e#279#280#0" expanded="true" />
-            <element signature="e#336#337#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3258,7 +3218,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.56" vertical-offset="85" max-vertical-offset="510">
           <caret line="23" column="47" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3266,33 +3225,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="416" max-vertical-offset="1224">
           <caret line="39" column="88" selection-start-line="39" selection-start-column="88" selection-end-line="39" selection-end-column="88" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Server/src/main/java/server/handler/SoCeServerHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.48" vertical-offset="0" max-vertical-offset="1207">
-          <caret line="71" column="5" selection-start-line="71" selection-start-column="5" selection-end-line="71" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Server/src/main/java/server/network/event/listener/EventQueueHandlerThreadFinishedListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
-          <caret line="8" column="88" selection-start-line="8" selection-start-column="88" selection-end-line="8" selection-end-column="88" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Client/src/main/java/client/impl/ClientApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1105">
-          <caret line="53" column="98" selection-start-line="53" selection-start-column="98" selection-end-line="53" selection-end-column="98" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3300,14 +3232,37 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.60714287" vertical-offset="255" max-vertical-offset="799">
           <caret line="35" column="9" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/src/main/java/server/network/event/EventQueueThreadPool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="291" max-vertical-offset="1581">
+          <caret line="35" column="17" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Client/src/main/java/client/impl/SoCeClient.java">
+    <entry file="file://$PROJECT_DIR$/Client/src/main/java/client/impl/ClientApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.508046" vertical-offset="357" max-vertical-offset="952">
-          <caret line="47" column="71" selection-start-line="47" selection-start-column="71" selection-end-line="47" selection-end-column="71" />
+        <state vertical-scroll-proportion="0.22767857" vertical-offset="459" max-vertical-offset="1105">
+          <caret line="53" column="98" selection-start-line="53" selection-start-column="98" selection-end-line="53" selection-end-column="98" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/src/main/java/server/handler/SoCeServerHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.1763394" vertical-offset="79" max-vertical-offset="1207">
+          <caret line="71" column="5" selection-start-line="71" selection-start-column="5" selection-end-line="71" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/src/main/java/server/handler/impl/SoCeServerObjectHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5862069" vertical-offset="51" max-vertical-offset="748">
+          <caret line="31" column="53" selection-start-line="31" selection-start-column="53" selection-end-line="31" selection-end-column="53" />
           <folding />
         </state>
       </provider>
@@ -3320,44 +3275,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Server/src/main/java/server/impl/ServerManager.java">
+    <entry file="file://$PROJECT_DIR$/Server/src/main/java/server/ServerMain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="1224">
-          <caret line="57" column="56" selection-start-line="57" selection-start-column="56" selection-end-line="57" selection-end-column="56" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
+          <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Server/src/main/java/server/impl/ServerApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1256" max-vertical-offset="1887">
+        <state vertical-scroll-proportion="2.016092" vertical-offset="687" max-vertical-offset="1887">
           <caret line="137" column="87" selection-start-line="137" selection-start-column="87" selection-end-line="137" selection-end-column="87" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Server/src/main/java/server/network/event/EventQueueThreadPool.java">
+    <entry file="file://$PROJECT_DIR$/Server/src/main/java/server/network/event/listener/EventQueueHandlerThreadFinishedListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="291" max-vertical-offset="1581">
-          <caret line="35" column="17" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
-          <folding>
-            <element signature="e#560#585#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Server/src/main/java/server/handler/impl/SoCeServerObjectHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="714">
-          <caret line="33" column="96" selection-start-line="33" selection-start-column="96" selection-end-line="33" selection-end-column="96" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
+          <caret line="8" column="88" selection-start-line="8" selection-start-column="88" selection-end-line="8" selection-end-column="88" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Server/src/main/java/server/ServerMain.java">
+    <entry file="file://$PROJECT_DIR$/Server/src/main/java/server/impl/ServerManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5691964" vertical-offset="0" max-vertical-offset="476">
-          <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="1241">
+          <caret line="43" column="80" selection-start-line="43" selection-start-column="80" selection-end-line="43" selection-end-column="80" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/src/main/java/client/impl/SoCeClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5471264" vertical-offset="238" max-vertical-offset="986">
+          <caret line="41" column="55" selection-start-line="41" selection-start-column="55" selection-end-line="41" selection-end-column="55" />
           <folding />
         </state>
       </provider>

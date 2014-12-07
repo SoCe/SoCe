@@ -40,6 +40,8 @@ public class SoCeClient implements Runnable {
             b.group(workerGroup);
             b.channel(NioSocketChannel.class);
             b.option(ChannelOption.SO_KEEPALIVE, true);
+
+            //every channel is an connection and get this configuration
             b.handler(new ChannelInitializer<SocketChannel>() {
                 @Override
                 public void initChannel(SocketChannel ch) throws Exception {
