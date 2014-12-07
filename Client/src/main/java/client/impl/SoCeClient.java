@@ -41,6 +41,10 @@ public class SoCeClient implements Runnable {
             b.channel(NioSocketChannel.class);
             b.option(ChannelOption.SO_KEEPALIVE, true);
 
+            //Akka Actor System
+
+            //akka.io
+
             //every channel is an connection and get this configuration
             b.handler(new ChannelInitializer<SocketChannel>() {
                 @Override

@@ -38,7 +38,7 @@ public class SoCeServerObjectHandler extends SimpleChannelInboundHandler {
 
     @Override
     public void channelActive(final ChannelHandlerContext ctx) {
-        //
+        LoggerInstance.getLogger().debug("channel active.");
     }
 
     @Override
